@@ -1,7 +1,6 @@
 const header = document.querySelector("[data-site-header]");
 const filterButtons = document.querySelectorAll("[data-filter]");
-const projectCards = document.querySelectorAll("[data-category]");
-const photoStrip = document.querySelector("[data-photo-strip]");
+const categoryItems = document.querySelectorAll("[data-category]");
 const year = document.querySelector("[data-year]");
 
 if (year) {
@@ -19,17 +18,9 @@ filterButtons.forEach((button) => {
     filterButtons.forEach((item) => item.classList.remove("active"));
     button.classList.add("active");
 
-    projectCards.forEach((card) => {
-      const shouldShow = filter === "all" || card.dataset.category === filter;
-      card.classList.toggle("is-hidden", !shouldShow);
+    categoryItems.forEach((item) => {
+      const shouldShow = filter === "all" || item.dataset.category === filter;
+      item.classList.toggle("is-hidden", !shouldShow);
     });
   });
-});
-
-document.querySelector("[data-photo-prev]")?.addEventListener("click", () => {
-  photoStrip?.scrollBy({ left: -photoStrip.clientWidth * 0.8, behavior: "smooth" });
-});
-
-document.querySelector("[data-photo-next]")?.addEventListener("click", () => {
-  photoStrip?.scrollBy({ left: photoStrip.clientWidth * 0.8, behavior: "smooth" });
 });
