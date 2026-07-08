@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brian Bishop</title>
+    <meta
+      name="description"
+      content="Brian Bishop's public home for projects, apps, essays, photos, and experiments."
+    >
+    <meta property="og:title" content="Brian Bishop">
+    <meta
+      property="og:description"
+      content="A public home for projects, apps, essays, photos, and experiments."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/home-hero.png">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" data-site-header>
+      <a class="brand" href="#top" aria-label="Brian Bishop home">
+        <span class="brand-mark" aria-hidden="true">BB</span>
+        <span>Brian Bishop</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#projects">Projects</a>
+        <a href="#writing">Writing</a>
+        <a href="#photos">Photos</a>
+        <a href="#now">Now</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-label="Introduction">
+        <img
+          class="hero-image"
+          src="assets/home-hero.png"
+          alt="A desk with a laptop, notebook, camera, printed photos, and electronics parts."
+        >
+        <div class="hero-scrim" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Public notebook and project shelf</p>
+          <h1>Brian Bishop</h1>
+          <p class="hero-copy">
+            A home for the things I make, write, notice, test, photograph, and keep returning to.
+          </p>
+          <div class="hero-actions" aria-label="Featured links">
+            <a class="button primary" href="#projects">Browse projects</a>
+            <a class="button secondary" href="#writing">Read essays</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro section-band" aria-labelledby="intro-title">
+        <div class="section-inner intro-grid">
+          <div>
+            <p class="eyebrow">About this place</p>
+            <h2 id="intro-title">A personal site built to accumulate.</h2>
+          </div>
+          <p>
+            This space is meant to hold finished work and work in progress: useful apps,
+            research trails, short notes, longer essays, field photos, experiments, and the
+            occasional odd idea that needs a URL before it needs a business plan.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Projects</p>
+              <h2 id="projects-title">Things to open, use, or inspect</h2>
+            </div>
+            <div class="filters" aria-label="Project filters">
+              <button class="filter-button active" type="button" data-filter="all">All</button>
+              <button class="filter-button" type="button" data-filter="app">Apps</button>
+              <button class="filter-button" type="button" data-filter="research">Research</button>
+              <button class="filter-button" type="button" data-filter="experiment">Experiments</button>
+            </div>
+          </div>
+
+          <div class="project-grid" data-project-grid>
+            <article class="project-card" data-category="app">
+              <p class="project-kicker">App</p>
+              <h3>Project Name</h3>
+              <p>A concise description of what the app does, who it is for, and why it exists.</p>
+              <a href="#" aria-label="Open Project Name">Open</a>
+            </article>
+            <article class="project-card" data-category="research">
+              <p class="project-kicker">Research</p>
+              <h3>Research Trail</h3>
+              <p>Collected notes, references, questions, and working conclusions around a topic.</p>
+              <a href="#" aria-label="Open Research Trail">Read notes</a>
+            </article>
+            <article class="project-card" data-category="experiment">
+              <p class="project-kicker">Experiment</p>
+              <h3>Small Prototype</h3>
+              <p>A sandbox for testing an interaction, technical idea, data view, or creative tool.</p>
+              <a href="#" aria-label="Open Small Prototype">View</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section muted" id="writing" aria-labelledby="writing-title">
+        <div class="section-inner writing-layout">
+          <div class="section-heading stacked">
+            <p class="eyebrow">Writing</p>
+            <h2 id="writing-title">Essays, notes, and fragments</h2>
+            <p>
+              A place for arguments, observations, process notes, and thoughts that are easier to
+              improve in public.
+            </p>
+          </div>
+          <div class="essay-list">
+            <a class="essay-row" href="#">
+              <span>Essay title or note goes here</span>
+              <time datetime="2026-07-08">Jul 8, 2026</time>
+            </a>
+            <a class="essay-row" href="#">
+              <span>A shorter field note</span>
+              <time datetime="2026-07-08">Jul 8, 2026</time>
+            </a>
+            <a class="essay-row" href="#">
+              <span>Reading notes, links, and loose questions</span>
+              <time datetime="2026-07-08">Jul 8, 2026</time>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="photos" aria-labelledby="photos-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Photos</p>
+              <h2 id="photos-title">Recent frames</h2>
+            </div>
+            <div class="photo-controls" aria-label="Photo controls">
+              <button class="icon-button" type="button" data-photo-prev aria-label="Previous photo">‹</button>
+              <button class="icon-button" type="button" data-photo-next aria-label="Next photo">›</button>
+            </div>
+          </div>
+          <div class="photo-strip" data-photo-strip tabindex="0" aria-label="Scrollable photo previews">
+            <figure>
+              <img src="assets/home-hero.png" alt="Workspace details with notebook and printed photos.">
+              <figcaption>Workspace studies</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/home-hero.png" alt="Camera and printed contact sheets on a desk.">
+              <figcaption>Contact sheets</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/home-hero.png" alt="Laptop, notes, and small electronics parts on a table.">
+              <figcaption>Tools in progress</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section muted" id="now" aria-labelledby="now-title">
+        <div class="section-inner now-grid">
+          <div>
+            <p class="eyebrow">Now</p>
+            <h2 id="now-title">Current focus</h2>
+          </div>
+          <ul class="now-list">
+            <li>Building out a durable home for public projects and experiments.</li>
+            <li>Choosing which essays, tools, and photo sets should get their own pages first.</li>
+            <li>Keeping the site quiet, fast, and easy to update.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span data-year></span> Brian Bishop</p>
+      <a href="mailto:hello@brianbishop.org">hello@brianbishop.org</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
