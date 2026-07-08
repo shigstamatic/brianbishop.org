@@ -27,12 +27,13 @@
           <span class="brand-subtitle">Long-running builds, small experiments, field notes, photos.</span>
         </span>
       </a>
-      <nav class="nav" aria-label="Primary navigation">
-        <a href="#physical">Physical</a>
-        <a href="#digital">Digital</a>
-        <a href="#notes">Notes</a>
-        <a href="#photos">Photos</a>
-        <a href="#ephemera">Ephemera</a>
+      <nav class="nav" aria-label="Post filters">
+        <button class="nav-filter active" type="button" data-filter="all">All</button>
+        <button class="nav-filter" type="button" data-filter="physical">Physical</button>
+        <button class="nav-filter" type="button" data-filter="digital">Digital</button>
+        <button class="nav-filter" type="button" data-filter="note">Notes</button>
+        <button class="nav-filter" type="button" data-filter="photo">Photos</button>
+        <button class="nav-filter" type="button" data-filter="ephemera">Ephemera</button>
       </nav>
     </header>
 
@@ -41,16 +42,8 @@
         <div class="index-inner">
           <div class="index-heading">
             <div>
-              <p class="eyebrow">Latest</p>
-              <h1 id="index-title">Public index</h1>
-            </div>
-            <div class="filters" aria-label="Post filters">
-              <button class="filter-button active" type="button" data-filter="all">All</button>
-              <button class="filter-button" type="button" data-filter="physical">Physical</button>
-              <button class="filter-button" type="button" data-filter="digital">Digital</button>
-              <button class="filter-button" type="button" data-filter="note">Notes</button>
-              <button class="filter-button" type="button" data-filter="photo">Photos</button>
-              <button class="filter-button" type="button" data-filter="ephemera">Ephemera</button>
+              <p class="eyebrow">Recent updates</p>
+              <p class="index-note" id="index-title">Newest public posts, notes, photos, and project updates.</p>
             </div>
           </div>
 
