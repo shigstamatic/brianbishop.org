@@ -47,8 +47,8 @@ a {
 .site-header {
   align-items: center;
   backdrop-filter: blur(18px);
-  background: rgba(251, 250, 246, 0.82);
-  border-bottom: 1px solid rgba(216, 211, 199, 0.74);
+  background: rgba(240, 238, 230, 0.92);
+  border-bottom: 1px solid var(--line-strong);
   display: flex;
   gap: 24px;
   justify-content: space-between;
@@ -144,7 +144,7 @@ a {
 }
 
 .index-section {
-  padding: clamp(128px, 15vw, 176px) clamp(20px, 5vw, 64px) clamp(64px, 10vw, 120px);
+  padding: clamp(118px, 13vw, 152px) clamp(20px, 5vw, 64px) clamp(64px, 10vw, 120px);
 }
 
 .index-inner {
@@ -160,7 +160,7 @@ a {
 
 .index-note {
   color: var(--ink-soft);
-  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  font-size: clamp(0.98rem, 1.55vw, 1.12rem);
   margin: 0;
   max-width: 680px;
 }
@@ -432,9 +432,9 @@ h3 {
 }
 
 .post-main h2 {
-  font-size: clamp(1.45rem, 3vw, 2.45rem);
-  line-height: 1.06;
-  margin-bottom: 10px;
+  font-size: clamp(1.2rem, 2.1vw, 1.7rem);
+  line-height: 1.14;
+  margin-bottom: 8px;
 }
 
 .post-main p:last-child {
@@ -443,12 +443,12 @@ h3 {
 
 .post-main p {
   color: var(--ink-soft);
-  font-size: 1.02rem;
+  font-size: 0.96rem;
 }
 
 .post-link {
   color: var(--rust);
-  font-size: 0.92rem;
+  font-size: 0.86rem;
   font-weight: 800;
   justify-self: end;
   padding-top: 4px;
@@ -715,7 +715,7 @@ h3 {
   }
 
   .index-section {
-    padding-top: 150px;
+    padding-top: 142px;
   }
 
   h1 {
