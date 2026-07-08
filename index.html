@@ -6,12 +6,12 @@
     <title>Brian Bishop</title>
     <meta
       name="description"
-      content="Brian Bishop's public home for projects, apps, essays, photos, and experiments."
+      content="Brian Bishop's project lab and portfolio for long-running builds, experiments, notes, photos, and public work."
     >
     <meta property="og:title" content="Brian Bishop">
     <meta
       property="og:description"
-      content="A public home for projects, apps, essays, photos, and experiments."
+      content="A project lab and portfolio for long-running builds, experiments, notes, photos, and public work."
     >
     <meta property="og:type" content="website">
     <meta property="og:image" content="assets/home-hero.png">
@@ -26,8 +26,8 @@
       </a>
       <nav class="nav" aria-label="Primary navigation">
         <a href="#projects">Projects</a>
-        <a href="#writing">Writing</a>
-        <a href="#photos">Photos</a>
+        <a href="#notes">Notes</a>
+        <a href="#photos">Field Photos</a>
         <a href="#now">Now</a>
       </nav>
     </header>
@@ -41,14 +41,15 @@
         >
         <div class="hero-scrim" aria-hidden="true"></div>
         <div class="hero-content">
-          <p class="eyebrow">Public notebook and project shelf</p>
+          <p class="eyebrow">Project lab and public portfolio</p>
           <h1>Brian Bishop</h1>
           <p class="hero-copy">
-            A home for the things I make, write, notice, test, photograph, and keep returning to.
+            Long-running builds, small experiments, field notes, photos, and other work worth
+            giving a stable address.
           </p>
           <div class="hero-actions" aria-label="Featured links">
             <a class="button primary" href="#projects">Browse projects</a>
-            <a class="button secondary" href="#writing">Read essays</a>
+            <a class="button secondary" href="#notes">Read notes</a>
           </div>
         </div>
       </section>
@@ -56,13 +57,13 @@
       <section class="intro section-band" aria-labelledby="intro-title">
         <div class="section-inner intro-grid">
           <div>
-            <p class="eyebrow">About this place</p>
-            <h2 id="intro-title">A personal site built to accumulate.</h2>
+            <p class="eyebrow">What this is</p>
+            <h2 id="intro-title">A working shelf for projects with different half-lives.</h2>
           </div>
           <p>
-            This space is meant to hold finished work and work in progress: useful apps,
-            research trails, short notes, longer essays, field photos, experiments, and the
-            occasional odd idea that needs a URL before it needs a business plan.
+            Some projects run for years, like building a house with my wife. Others are sketches,
+            tools, questions, photos, or ideas that may only need a short entry. This site is the
+            public index for both: durable enough to revisit, light enough to keep moving.
           </p>
         </div>
       </section>
@@ -72,60 +73,68 @@
           <div class="section-heading">
             <div>
               <p class="eyebrow">Projects</p>
-              <h2 id="projects-title">Things to open, use, or inspect</h2>
+              <h2 id="projects-title">Ongoing work and useful experiments</h2>
             </div>
             <div class="filters" aria-label="Project filters">
               <button class="filter-button active" type="button" data-filter="all">All</button>
-              <button class="filter-button" type="button" data-filter="app">Apps</button>
-              <button class="filter-button" type="button" data-filter="research">Research</button>
-              <button class="filter-button" type="button" data-filter="experiment">Experiments</button>
+              <button class="filter-button" type="button" data-filter="build">Builds</button>
+              <button class="filter-button" type="button" data-filter="tool">Tools</button>
+              <button class="filter-button" type="button" data-filter="note">Notes</button>
             </div>
           </div>
 
           <div class="project-grid" data-project-grid>
-            <article class="project-card" data-category="app">
-              <p class="project-kicker">App</p>
-              <h3>Project Name</h3>
-              <p>A concise description of what the app does, who it is for, and why it exists.</p>
-              <a href="#" aria-label="Open Project Name">Open</a>
+            <article class="project-card featured-project" data-category="build">
+              <p class="project-kicker">Long-running build</p>
+              <h3>House Project</h3>
+              <p>
+                A multi-year record of designing, deciding, learning, and building a home with my
+                wife.
+              </p>
+              <a href="#" aria-label="Open House Project">Project page coming soon</a>
             </article>
-            <article class="project-card" data-category="research">
-              <p class="project-kicker">Research</p>
-              <h3>Research Trail</h3>
-              <p>Collected notes, references, questions, and working conclusions around a topic.</p>
-              <a href="#" aria-label="Open Research Trail">Read notes</a>
+            <article class="project-card" data-category="tool">
+              <p class="project-kicker">Tool / app</p>
+              <h3>Small Utilities</h3>
+              <p>
+                Practical tools and prototypes: the things that are easier to share than explain.
+              </p>
+              <a href="#" aria-label="Open Small Utilities">Index coming soon</a>
             </article>
-            <article class="project-card" data-category="experiment">
-              <p class="project-kicker">Experiment</p>
-              <h3>Small Prototype</h3>
-              <p>A sandbox for testing an interaction, technical idea, data view, or creative tool.</p>
-              <a href="#" aria-label="Open Small Prototype">View</a>
+            <article class="project-card" data-category="note">
+              <p class="project-kicker">Working notes</p>
+              <h3>Research Trails</h3>
+              <p>
+                Collections of references, decisions, questions, and half-finished arguments that
+                might become something sturdier.
+              </p>
+              <a href="#" aria-label="Open Research Trails">Notes coming soon</a>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section muted" id="writing" aria-labelledby="writing-title">
+      <section class="section muted" id="notes" aria-labelledby="notes-title">
         <div class="section-inner writing-layout">
           <div class="section-heading stacked">
-            <p class="eyebrow">Writing</p>
-            <h2 id="writing-title">Essays, notes, and fragments</h2>
+            <p class="eyebrow">Notes</p>
+            <h2 id="notes-title">Updates, observations, and fragments</h2>
             <p>
-              A place for arguments, observations, process notes, and thoughts that are easier to
-              improve in public.
+              Short posts will live here first: project updates, design decisions, reading notes,
+              and stray observations that deserve a timestamp.
             </p>
           </div>
           <div class="essay-list">
             <a class="essay-row" href="#">
-              <span>Essay title or note goes here</span>
+              <span>Why this site exists</span>
               <time datetime="2026-07-08">Jul 8, 2026</time>
             </a>
             <a class="essay-row" href="#">
-              <span>A shorter field note</span>
+              <span>House project: starting the public log</span>
               <time datetime="2026-07-08">Jul 8, 2026</time>
             </a>
             <a class="essay-row" href="#">
-              <span>Reading notes, links, and loose questions</span>
+              <span>Things worth turning into project pages</span>
               <time datetime="2026-07-08">Jul 8, 2026</time>
             </a>
           </div>
@@ -136,8 +145,8 @@
         <div class="section-inner">
           <div class="section-heading">
             <div>
-              <p class="eyebrow">Photos</p>
-              <h2 id="photos-title">Recent frames</h2>
+              <p class="eyebrow">Field photos</p>
+              <h2 id="photos-title">Images as project memory</h2>
             </div>
             <div class="photo-controls" aria-label="Photo controls">
               <button class="icon-button" type="button" data-photo-prev aria-label="Previous photo">‹</button>
@@ -147,15 +156,15 @@
           <div class="photo-strip" data-photo-strip tabindex="0" aria-label="Scrollable photo previews">
             <figure>
               <img src="assets/home-hero.png" alt="Workspace details with notebook and printed photos.">
-              <figcaption>Workspace studies</figcaption>
+              <figcaption>Materials, notes, and working surfaces</figcaption>
             </figure>
             <figure>
               <img src="assets/home-hero.png" alt="Camera and printed contact sheets on a desk.">
-              <figcaption>Contact sheets</figcaption>
+              <figcaption>Reference images and contact sheets</figcaption>
             </figure>
             <figure>
               <img src="assets/home-hero.png" alt="Laptop, notes, and small electronics parts on a table.">
-              <figcaption>Tools in progress</figcaption>
+              <figcaption>Tools, prototypes, and in-progress work</figcaption>
             </figure>
           </div>
         </div>
@@ -168,9 +177,9 @@
             <h2 id="now-title">Current focus</h2>
           </div>
           <ul class="now-list">
-            <li>Building out a durable home for public projects and experiments.</li>
-            <li>Choosing which essays, tools, and photo sets should get their own pages first.</li>
-            <li>Keeping the site quiet, fast, and easy to update.</li>
+            <li>Turning this placeholder into a simple V1 project lab.</li>
+            <li>Preparing the house project to become the first real long-running project page.</li>
+            <li>Keeping updates lightweight enough to publish monthly without ceremony.</li>
           </ul>
         </div>
       </section>
