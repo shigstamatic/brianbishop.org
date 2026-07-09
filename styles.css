@@ -91,14 +91,9 @@ a {
 }
 
 .brand-mark {
-  align-items: center;
-  background: var(--ink);
   border-radius: 50%;
-  color: var(--paper);
-  display: inline-flex;
-  font-size: 0.75rem;
   height: 34px;
-  justify-content: center;
+  object-fit: cover;
   width: 34px;
 }
 
