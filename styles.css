@@ -463,6 +463,108 @@ h3 {
   width: min(100%, 560px);
 }
 
+.entry {
+  margin: 0 auto;
+  max-width: 980px;
+  padding: clamp(118px, 13vw, 152px) clamp(20px, 5vw, 64px) clamp(64px, 10vw, 120px);
+}
+
+.entry-header {
+  border-bottom: 1px solid var(--line-strong);
+  padding-bottom: 28px;
+}
+
+.back-link {
+  color: var(--rust);
+  display: inline-flex;
+  font-size: 0.88rem;
+  font-weight: 800;
+  margin-bottom: 28px;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  color: var(--ink);
+}
+
+.entry-header h1 {
+  font-size: clamp(2.2rem, 6vw, 4.8rem);
+  line-height: 0.98;
+  margin-bottom: 18px;
+  max-width: 11ch;
+}
+
+.entry-summary {
+  color: var(--ink-soft);
+  font-size: clamp(1.04rem, 2vw, 1.28rem);
+  margin-bottom: 18px;
+  max-width: 760px;
+}
+
+.entry-meta {
+  color: var(--ink-soft);
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.92rem;
+  gap: 8px 16px;
+  margin: 0;
+}
+
+.entry-hero {
+  margin: 34px 0 40px;
+}
+
+.entry-hero img,
+.entry-gallery img {
+  border-radius: 8px;
+  width: 100%;
+}
+
+.entry-hero figcaption,
+.entry-gallery figcaption {
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.entry-body {
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 42px;
+  padding-bottom: 24px;
+}
+
+.entry-body p {
+  color: var(--ink);
+  font-size: 1.02rem;
+  margin-bottom: 20px;
+  max-width: 760px;
+}
+
+.entry-gallery {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.entry-gallery h2 {
+  font-size: clamp(1.35rem, 3vw, 2rem);
+  grid-column: 1 / -1;
+  margin-bottom: 0;
+}
+
+.entry-gallery figure {
+  margin: 0;
+}
+
+.entry-gallery img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.entry-gallery figure:nth-of-type(10) img {
+  aspect-ratio: 3 / 4;
+}
+
 .project-card {
   background: var(--white);
   border: 1px solid var(--line);
@@ -667,6 +769,10 @@ h3 {
     grid-template-columns: minmax(84px, 0.28fr) minmax(0, 1fr);
   }
 
+  .entry-gallery {
+    grid-template-columns: 1fr;
+  }
+
   .post-link {
     grid-column: 2;
     justify-self: start;
@@ -713,8 +819,16 @@ h3 {
     padding-top: 142px;
   }
 
+  .entry {
+    padding-top: 142px;
+  }
+
   h1 {
     font-size: clamp(3.7rem, 22vw, 5.6rem);
+  }
+
+  .entry-header h1 {
+    font-size: clamp(2.1rem, 12vw, 3.5rem);
   }
 
   .button {
