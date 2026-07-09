@@ -176,6 +176,20 @@ For posts with many media assets, include a media section in `post.md`:
   - Use: inline
 ```
 
+## Default published post structure
+
+Published posts should use this general structure unless there is a reason to do something custom:
+
+- Compact post title, not a landing-page-sized headline
+- Comfortable left gutter on desktop
+- Short narrative introduction
+- Optional hero image when one image sets context for the post
+- Thumbnail gallery for multiple images
+- Click-to-enlarge behavior for gallery images
+- Captions visible under thumbnails and repeated in the enlarged view
+
+For photo-heavy posts, prefer smaller thumbnails on the page and a lightbox/enlarged view on click. This keeps the post readable while still letting the photos be inspected.
+
 ## Text modes
 
 Use one of these modes when giving Codex content.
@@ -221,4 +235,3 @@ Before committing content:
 - Remove private addresses, phone numbers, financial records, credentials, or personal documents.
 - Keep unpublished private notes outside this repository.
 - Review `git status` before committing.
-

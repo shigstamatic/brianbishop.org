@@ -1,6 +1,10 @@
 const header = document.querySelector("[data-site-header]");
 const filterButtons = document.querySelectorAll("[data-filter]");
 const categoryItems = document.querySelectorAll("[data-category]");
+const lightbox = document.querySelector("[data-lightbox]");
+const lightboxImage = document.querySelector("[data-lightbox-image]");
+const lightboxCaption = document.querySelector("[data-lightbox-caption]");
+const lightboxClose = document.querySelector("[data-lightbox-close]");
 const year = document.querySelector("[data-year]");
 
 if (year) {
@@ -23,4 +27,28 @@ filterButtons.forEach((button) => {
       item.classList.toggle("is-hidden", !shouldShow);
     });
   });
+});
+
+document.querySelectorAll("[data-lightbox-src]").forEach((button) => {
+  button.addEventListener("click", () => {
+    if (!lightbox || !lightboxImage || !lightboxCaption) {
+      return;
+    }
+
+    const image = button.querySelector("img");
+    lightboxImage.src = button.dataset.lightboxSrc;
+    lightboxImage.alt = image?.alt || "";
+    lightboxCaption.textContent = button.dataset.lightboxCaption || "";
+    lightbox.showModal();
+  });
+});
+
+lightboxClose?.addEventListener("click", () => {
+  lightbox?.close();
+});
+
+lightbox?.addEventListener("click", (event) => {
+  if (event.target === lightbox) {
+    lightbox.close();
+  }
 });
