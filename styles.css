@@ -379,10 +379,20 @@ h3 {
 .post-row {
   align-items: start;
   border-bottom: 1px solid var(--line);
+  color: inherit;
   display: grid;
   gap: 24px;
-  grid-template-columns: minmax(110px, 0.18fr) minmax(0, 1fr) minmax(120px, 0.16fr);
+  grid-template-columns: minmax(110px, 0.18fr) minmax(0, 1fr);
   padding: 28px 0;
+  text-decoration: none;
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease;
+}
+
+.post-row:hover {
+  background: rgba(23, 32, 27, 0.035);
+  border-color: var(--line-strong);
 }
 
 .post-row.is-hidden {
@@ -392,7 +402,8 @@ h3 {
 .post-date {
   color: var(--ink-soft);
   font-size: 0.94rem;
-  padding-top: 4px;
+  line-height: 1;
+  padding-top: 1px;
 }
 
 .post-main {
@@ -404,6 +415,7 @@ h3 {
   font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 0.1em;
+  line-height: 1;
   margin-bottom: 8px;
   text-transform: uppercase;
 }
@@ -439,20 +451,6 @@ h3 {
 .post-main p {
   color: var(--ink-soft);
   font-size: 0.96rem;
-}
-
-.post-link {
-  color: var(--rust);
-  font-size: 0.86rem;
-  font-weight: 800;
-  justify-self: end;
-  padding-top: 4px;
-  text-decoration: none;
-  white-space: nowrap;
-}
-
-.post-link:hover {
-  color: var(--ink);
 }
 
 .post-image {
@@ -841,12 +839,6 @@ h3 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .post-link {
-    grid-column: 2;
-    justify-self: start;
-    padding-top: 0;
-  }
-
   .filters {
     flex-wrap: wrap;
   }
@@ -920,7 +912,4 @@ h3 {
     padding: 24px 0;
   }
 
-  .post-link {
-    grid-column: auto;
-  }
 }

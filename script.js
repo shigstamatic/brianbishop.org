@@ -15,19 +15,29 @@ window.addEventListener("scroll", () => {
   header?.classList.toggle("scrolled", window.scrollY > 16);
 });
 
+const applyFilter = (filter) => {
+  filterButtons.forEach((item) => {
+    item.classList.toggle("active", item.dataset.filter === filter);
+  });
+
+  categoryItems.forEach((item) => {
+    const shouldShow = filter === "all" || item.dataset.category === filter;
+    item.classList.toggle("is-hidden", !shouldShow);
+  });
+};
+
 filterButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const filter = button.dataset.filter;
-
-    filterButtons.forEach((item) => item.classList.remove("active"));
-    button.classList.add("active");
-
-    categoryItems.forEach((item) => {
-      const shouldShow = filter === "all" || item.dataset.category === filter;
-      item.classList.toggle("is-hidden", !shouldShow);
-    });
+    applyFilter(filter);
+    window.history.replaceState(null, "", filter === "all" ? window.location.pathname : `?filter=${filter}`);
   });
 });
+
+const requestedFilter = new URLSearchParams(window.location.search).get("filter");
+if (requestedFilter && document.querySelector(`[data-filter="${requestedFilter}"]`)) {
+  applyFilter(requestedFilter);
+}
 
 document.querySelectorAll("[data-lightbox-src]").forEach((button) => {
   button.addEventListener("click", () => {

@@ -1,5 +1,5 @@
 ---
-title: "Katy Manor: First Public Log"
+title: "Katy Manor: First Year (2023)"
 date: "2026-07-09"
 type: "physical"
 primary_label: "Katy Manor"
