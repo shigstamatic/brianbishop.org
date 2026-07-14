@@ -383,7 +383,7 @@ h3 {
   display: grid;
   gap: 24px;
   grid-template-columns: minmax(110px, 0.18fr) minmax(0, 1fr);
-  padding: 28px 0;
+  padding: 14px 12px;
   text-decoration: none;
   transition:
     background-color 160ms ease,
@@ -909,7 +909,7 @@ h3 {
   .post-row {
     gap: 8px;
     grid-template-columns: 1fr;
-    padding: 24px 0;
+    padding: 14px 12px;
   }
 
 }
