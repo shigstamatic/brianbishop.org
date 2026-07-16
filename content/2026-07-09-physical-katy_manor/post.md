@@ -8,7 +8,7 @@ labels:
   - "House build"
 status: "published"
 summary: "The first public note from the Katy Manor house build, covering the first year of work from property purchase through framing, siding, windows, and the start of the deck."
-hero_image: "images/15-siding-and-front-deck.webp"
+hero_image: "images/19-siding-and-front-deck.webp"
 canonical_url: "https://brianbishop.org/posts/2026-07-09-katy-manor-first-public-log/"
 ---
 
