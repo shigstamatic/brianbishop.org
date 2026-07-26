@@ -542,6 +542,20 @@ h3 {
   max-width: 760px;
 }
 
+.entry-body blockquote {
+  border-left: 3px solid var(--rust);
+  color: var(--ink-soft);
+  margin: 4px 0 24px;
+  max-width: 720px;
+  padding-left: 18px;
+}
+
+.entry-body blockquote p {
+  color: inherit;
+  font-size: 0.98rem;
+  margin-bottom: 10px;
+}
+
 .entry-gallery {
   display: grid;
   gap: 20px;
