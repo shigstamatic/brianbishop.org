@@ -439,7 +439,7 @@ h3 {
 }
 
 .post-main h2 {
-  font-size: clamp(1.2rem, 2.1vw, 1.7rem);
+  font-size: clamp(1.08rem, 1.7vw, 1.42rem);
   line-height: 1.14;
   margin-bottom: 8px;
 }
