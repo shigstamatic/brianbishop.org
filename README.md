@@ -2,6 +2,10 @@
 
 Static personal site for `brianbishop.org`: a public home for projects, apps, essays, photos, and experiments.
 
+## Content workflow
+
+Use `CONTENT_GUIDE.md` as the source of truth for adding posts, media, image galleries, and photo lightboxes. Posts with multiple images should use the shared gallery/lightbox pattern documented there.
+
 ## Preview locally
 
 ```bash

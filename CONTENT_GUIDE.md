@@ -190,6 +190,110 @@ Published posts should use this general structure unless there is a reason to do
 
 For photo-heavy posts, prefer smaller thumbnails on the page and a lightbox/enlarged view on click. This keeps the post readable while still letting the photos be inspected.
 
+## Default image gallery and lightbox pattern
+
+Posts with multiple images should use the shared gallery/lightbox framework by default.
+
+Use this pattern when a post is primarily a photo album, photo log, build log, or any post where readers should browse images one at a time.
+
+### Gallery behavior
+
+The default image browsing behavior is:
+
+- Thumbnail grid in the post body
+- Visible caption below each thumbnail
+- Click any thumbnail to open the image in a lightbox
+- Caption repeated inside the lightbox, directly below the large image
+- Previous and next controls below the image
+- Current image counter, such as `2 / 19`
+- Close button on the same control row
+- Wraparound navigation at both ends
+- Keyboard support for `ArrowLeft` and `ArrowRight`; native dialog close via `Escape`
+
+### Gallery markup
+
+Each gallery image should use a button with these attributes:
+
+```html
+<figure>
+  <button
+    class="gallery-thumb"
+    type="button"
+    data-lightbox-src="../../content/YYYY-MM-DD-type-label/images/01-example.webp"
+    data-lightbox-caption="Short public caption for this image."
+  >
+    <img
+      loading="lazy"
+      src="../../content/YYYY-MM-DD-type-label/images/01-example.webp"
+      alt="Specific alt text describing the image."
+    >
+  </button>
+  <figcaption>Short public caption for this image.</figcaption>
+</figure>
+```
+
+Rules:
+
+- `data-lightbox-src` points to the full image to display in the lightbox.
+- `data-lightbox-caption` is the source caption for that specific image.
+- The visible `figcaption` should usually match `data-lightbox-caption`.
+- The image `alt` text should describe the image for accessibility; it does not need to match the caption.
+- Keep image order in source order. Numbered filenames should match that order.
+
+### First gallery image
+
+For the first visible gallery thumbnail, use eager loading and intrinsic dimensions:
+
+```html
+<link rel="preload" as="image" href="../../content/YYYY-MM-DD-type-label/images/01-example.webp" fetchpriority="high">
+```
+
+```html
+<img
+  loading="eager"
+  fetchpriority="high"
+  width="1600"
+  height="1200"
+  src="../../content/YYYY-MM-DD-type-label/images/01-example.webp"
+  alt="Specific alt text describing the image."
+>
+```
+
+Use the actual exported image dimensions for `width` and `height`. This keeps the first thumbnail stable while the page loads.
+
+### Lightbox markup
+
+Photo posts should include one shared lightbox dialog after the post content:
+
+```html
+<dialog class="lightbox" data-lightbox tabindex="-1">
+  <div class="lightbox-frame">
+    <img data-lightbox-image alt="">
+  </div>
+  <div class="lightbox-info">
+    <p class="lightbox-caption" data-lightbox-caption-output></p>
+  </div>
+  <div class="lightbox-controls" aria-label="Photo navigation">
+    <div class="lightbox-nav-group">
+      <button class="lightbox-nav lightbox-prev" type="button" data-lightbox-prev aria-label="Previous image">‹</button>
+      <p class="lightbox-count" data-lightbox-count></p>
+      <button class="lightbox-nav lightbox-next" type="button" data-lightbox-next aria-label="Next image">›</button>
+    </div>
+    <button class="lightbox-close" type="button" data-lightbox-close>Close image</button>
+  </div>
+</dialog>
+```
+
+Important selector rule:
+
+- Thumbnail buttons use `data-lightbox-caption` as source data.
+- The lightbox output element uses `data-lightbox-caption-output`.
+- Do not use `data-lightbox-caption` on the lightbox output element. The JavaScript depends on these being distinct so it does not accidentally overwrite a thumbnail.
+
+### Hover behavior
+
+Gallery thumbnails may change color, contrast, or saturation on hover, but should not shift position. Avoid hover transforms that move thumbnails up or down; the gallery should feel stable while browsing.
+
 ## Text modes
 
 Use one of these modes when giving Codex content.
