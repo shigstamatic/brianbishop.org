@@ -74,6 +74,7 @@ lightboxItems.forEach((button, index) => {
 
     showLightboxItem(index);
     lightbox.showModal();
+    lightbox.focus({ preventScroll: true });
   });
 });
 

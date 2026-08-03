@@ -15,6 +15,7 @@
     >
     <meta property="og:type" content="article">
     <meta property="og:image" content="../../content/2026-07-09-physical-katy_manor/images/19-siding-and-front-deck.webp">
+    <link rel="preload" as="image" href="../../content/2026-07-09-physical-katy_manor/images/01-first-pic-before-construction.webp" fetchpriority="high">
     <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="../../styles.css">
   </head>
@@ -103,7 +104,7 @@
 
           <figure>
             <button class="gallery-thumb" type="button" data-lightbox-src="../../content/2026-07-09-physical-katy_manor/images/01-first-pic-before-construction.webp" data-lightbox-caption="The site before construction began.">
-              <img loading="eager" fetchpriority="high" decoding="async" src="../../content/2026-07-09-physical-katy_manor/images/01-first-pic-before-construction.webp" alt="The building site before construction began.">
+              <img loading="eager" fetchpriority="high" width="1600" height="1200" src="../../content/2026-07-09-physical-katy_manor/images/01-first-pic-before-construction.webp" alt="The building site before construction began.">
             </button>
             <figcaption>The site before construction began.</figcaption>
           </figure>
@@ -237,9 +238,12 @@
       </article>
     </main>
 
-    <dialog class="lightbox" data-lightbox>
+    <dialog class="lightbox" data-lightbox tabindex="-1">
       <div class="lightbox-frame">
         <img data-lightbox-image alt="">
+      </div>
+      <div class="lightbox-info">
+        <p data-lightbox-caption></p>
       </div>
       <div class="lightbox-controls" aria-label="Photo navigation">
         <div class="lightbox-nav-group">
@@ -248,9 +252,6 @@
           <button class="lightbox-nav lightbox-next" type="button" data-lightbox-next aria-label="Next image">›</button>
         </div>
         <button class="lightbox-close" type="button" data-lightbox-close>Close image</button>
-      </div>
-      <div class="lightbox-info">
-        <p data-lightbox-caption></p>
       </div>
     </dialog>
 
