@@ -239,14 +239,21 @@
 
     <dialog class="lightbox" data-lightbox>
       <button class="lightbox-close" type="button" data-lightbox-close>Close image</button>
-      <img data-lightbox-image alt="">
-      <p data-lightbox-caption></p>
+      <div class="lightbox-frame">
+        <button class="lightbox-nav lightbox-prev" type="button" data-lightbox-prev aria-label="Previous image">‹</button>
+        <img data-lightbox-image alt="">
+        <button class="lightbox-nav lightbox-next" type="button" data-lightbox-next aria-label="Next image">›</button>
+      </div>
+      <div class="lightbox-info">
+        <p data-lightbox-caption></p>
+        <p class="lightbox-count" data-lightbox-count></p>
+      </div>
     </dialog>
 
     <footer class="site-footer">
       <p>© <span data-year></span> Brian Bishop</p>
     </footer>
 
-    <script src="../../script.js?v=20260709-lightbox"></script>
+    <script src="../../script.js?v=20260803-gallery-nav"></script>
   </body>
 </html>
