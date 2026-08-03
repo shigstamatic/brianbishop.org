@@ -620,16 +620,13 @@ h3 {
   border-radius: 6px;
   display: block;
   justify-self: center;
-  max-height: calc(100svh - 150px);
+  max-height: calc(100svh - 190px);
   max-width: 100%;
   object-fit: contain;
 }
 
 .lightbox-info {
-  align-items: baseline;
-  display: flex;
-  gap: 20px;
-  justify-content: space-between;
+  text-align: center;
 }
 
 .lightbox p {
@@ -639,7 +636,6 @@ h3 {
 }
 
 .lightbox-count {
-  flex: 0 0 auto;
   font-weight: 800;
 }
 
@@ -659,11 +655,16 @@ h3 {
 }
 
 .lightbox-frame {
-  align-items: center;
   clear: both;
-  display: grid;
-  gap: 12px;
-  grid-template-columns: 40px minmax(0, 1fr) 40px;
+  display: block;
+}
+
+.lightbox-controls {
+  align-items: center;
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  margin-top: 14px;
 }
 
 .lightbox-nav {
@@ -675,13 +676,13 @@ h3 {
   cursor: pointer;
   display: inline-flex;
   font: inherit;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
-  height: 40px;
+  height: 52px;
   justify-content: center;
   line-height: 1;
-  padding: 0 0 4px;
-  width: 40px;
+  padding: 0 0 6px;
+  width: 52px;
 }
 
 .lightbox-nav:hover,
