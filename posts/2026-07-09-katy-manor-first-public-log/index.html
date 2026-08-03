@@ -103,7 +103,7 @@
 
           <figure>
             <button class="gallery-thumb" type="button" data-lightbox-src="../../content/2026-07-09-physical-katy_manor/images/01-first-pic-before-construction.webp" data-lightbox-caption="The site before construction began.">
-              <img loading="lazy" src="../../content/2026-07-09-physical-katy_manor/images/01-first-pic-before-construction.webp" alt="The building site before construction began.">
+              <img loading="eager" fetchpriority="high" decoding="async" src="../../content/2026-07-09-physical-katy_manor/images/01-first-pic-before-construction.webp" alt="The building site before construction began.">
             </button>
             <figcaption>The site before construction began.</figcaption>
           </figure>
@@ -238,14 +238,16 @@
     </main>
 
     <dialog class="lightbox" data-lightbox>
-      <button class="lightbox-close" type="button" data-lightbox-close>Close image</button>
       <div class="lightbox-frame">
         <img data-lightbox-image alt="">
       </div>
       <div class="lightbox-controls" aria-label="Photo navigation">
-        <button class="lightbox-nav lightbox-prev" type="button" data-lightbox-prev aria-label="Previous image">‹</button>
-        <p class="lightbox-count" data-lightbox-count></p>
-        <button class="lightbox-nav lightbox-next" type="button" data-lightbox-next aria-label="Next image">›</button>
+        <div class="lightbox-nav-group">
+          <button class="lightbox-nav lightbox-prev" type="button" data-lightbox-prev aria-label="Previous image">‹</button>
+          <p class="lightbox-count" data-lightbox-count></p>
+          <button class="lightbox-nav lightbox-next" type="button" data-lightbox-next aria-label="Next image">›</button>
+        </div>
+        <button class="lightbox-close" type="button" data-lightbox-close>Close image</button>
       </div>
       <div class="lightbox-info">
         <p data-lightbox-caption></p>

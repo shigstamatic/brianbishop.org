@@ -637,6 +637,8 @@ h3 {
 
 .lightbox-count {
   font-weight: 800;
+  line-height: 1;
+  margin: 0;
 }
 
 .lightbox-close {
@@ -645,26 +647,31 @@ h3 {
   border-radius: 999px;
   color: var(--paper);
   cursor: pointer;
-  float: right;
   font: inherit;
   font-size: 0.86rem;
   font-weight: 800;
-  margin-bottom: 10px;
   min-height: 34px;
   padding: 6px 12px;
+  white-space: nowrap;
 }
 
 .lightbox-frame {
-  clear: both;
   display: block;
 }
 
 .lightbox-controls {
   align-items: center;
+  display: grid;
+  grid-template-columns: minmax(112px, 1fr) auto minmax(112px, 1fr);
+  margin-top: 14px;
+}
+
+.lightbox-nav-group {
+  align-items: center;
   display: flex;
   gap: 18px;
+  grid-column: 2;
   justify-content: center;
-  margin-top: 14px;
 }
 
 .lightbox-nav {
@@ -676,13 +683,18 @@ h3 {
   cursor: pointer;
   display: inline-flex;
   font: inherit;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
-  height: 52px;
+  height: 42px;
   justify-content: center;
   line-height: 1;
-  padding: 0 0 6px;
-  width: 52px;
+  padding: 0 0 5px;
+  width: 42px;
+}
+
+.lightbox-controls .lightbox-close {
+  grid-column: 3;
+  justify-self: end;
 }
 
 .lightbox-nav:hover,
@@ -954,6 +966,21 @@ h3 {
 
   .entry-gallery {
     grid-template-columns: 1fr;
+  }
+
+  .lightbox-controls {
+    gap: 12px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .lightbox-nav-group,
+  .lightbox-controls .lightbox-close {
+    grid-column: 1;
+  }
+
+  .lightbox-controls .lightbox-close {
+    justify-self: center;
   }
 
   .button {
