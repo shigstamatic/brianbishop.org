@@ -3,79 +3,77 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Album Era</title>
-    <meta
-      name="description"
-      content="Album Era is an album-first music library for Apple Music."
-    >
-    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+    <title>Album Era | An album-first companion for Apple Music</title>
+    <meta name="description" content="Build a home for the albums you love with Album Era, an independent, album-first companion for Apple Music.">
+    <meta property="og:title" content="Album Era">
+    <meta property="og:description" content="Build a home for the albums you love, rediscover forgotten favorites, and make full-album listening feel intentional again.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://brianbishop.org/album-era/">
+    <meta property="og:image" content="https://brianbishop.org/album-era/assets/album-era-icon.png">
+    <link rel="canonical" href="https://brianbishop.org/album-era/">
+    <link rel="icon" href="assets/album-era-icon.png" type="image/png">
     <link rel="stylesheet" href="../styles.css">
   </head>
   <body>
     <header class="site-header" data-site-header>
-      <a class="brand" href="../" aria-label="Brian Bishop home">
-        <img class="brand-mark" src="../assets/website_logo_placeholder.png" alt="" aria-hidden="true">
-        <span class="brand-text">
-          <span>Album Era</span>
-          <span class="brand-subtitle">An album-first music library for Apple Music.</span>
-        </span>
+      <a class="brand" href="./" aria-label="Album Era home">
+        <img class="brand-mark album-era-brand-mark" src="assets/album-era-icon.png" alt="">
+        <span class="brand-text"><span>Album Era</span><span class="brand-subtitle">An album-first companion for Apple Music.</span></span>
       </a>
-      <nav class="nav" aria-label="Album Era links">
+      <nav class="nav" aria-label="Album Era">
+        <a class="active" href="./" aria-current="page">Overview</a>
         <a href="support/">Support</a>
         <a href="privacy/">Privacy</a>
       </nav>
     </header>
 
-    <main id="top">
-      <section class="index-section" aria-labelledby="album-era-title">
-        <div class="index-inner">
-          <div class="index-heading">
-            <p class="eyebrow">Album Era</p>
-            <h2 id="album-era-title">Build a home for the albums you love.</h2>
-            <p class="index-note">
-              Album Era helps Apple Music listeners collect complete albums, organize them onto shelves, rediscover forgotten favorites, and make full-album listening feel intentional again.
-            </p>
-          </div>
+    <main class="album-era-shell" id="top">
+      <section class="album-era-hero" aria-labelledby="album-era-title">
+        <div class="album-era-hero-copy">
+          <p class="eyebrow">Album Era</p>
+          <h1 id="album-era-title">Make full-album listening intentional again.</h1>
+          <p class="album-era-lede">Build a home for the albums you love, rediscover forgotten favorites, and make full-album listening feel intentional again.</p>
+          <p>Album Era is an independent, album-first companion for Apple Music. The app is free. Playback and catalog search require an active Apple Music subscription, purchased separately from Apple.</p>
+        </div>
+        <img class="album-era-icon" src="assets/album-era-icon.png" alt="Album Era app icon: a crate filled with albums">
+      </section>
 
-          <div class="post-list">
-            <section class="post-row">
-              <div class="post-date">Collect</div>
-              <div class="post-main">
-                <h2>Add Complete Albums</h2>
-                <p>
-                  Search Apple Music, add full albums to your Album Era collection, and keep the focus on complete works instead of loose tracks.
-                </p>
-              </div>
-            </section>
+      <section class="album-era-section" aria-labelledby="collection-title">
+        <div class="album-era-section-heading">
+          <p class="eyebrow">Your collection</p>
+          <h2 id="collection-title">Albums deserve a place of their own.</h2>
+        </div>
+        <div class="album-era-copy">
+          <p>Collect the classics you return to, discoveries you do not want to lose, soundtracks to particular seasons of your life, and albums you have always meant to hear all the way through. Add complete albums from Apple Music and build a collection that can grow from a few favorites to thousands of albums.</p>
+        </div>
+      </section>
 
-            <section class="post-row">
-              <div class="post-date">Organize</div>
-              <div class="post-main">
-                <h2>Curate Shelves</h2>
-                <p>
-                  Create manual shelves, smart shelves, and labels that reflect your taste, moods, eras, projects, and listening intentions.
-                </p>
-              </div>
-            </section>
+      <section class="album-era-feature-grid" aria-label="Album Era features">
+        <article class="album-era-feature"><p class="album-era-feature-number">01</p><h2>Shape your shelves</h2><p>Organize albums onto custom shelves for genres, moods, decades, artists, scenes, memories, projects, or anything else that makes sense to you.</p></article>
+        <article class="album-era-feature"><p class="album-era-feature-number">02</p><h2>Let Smart Shelves help</h2><p>Create dynamic shelves from rules such as artist, genre, release decade, and listening history, while keeping your own labels and organization intact.</p></article>
+        <article class="album-era-feature"><p class="album-era-feature-number">03</p><h2>Pick up where you stopped</h2><p>Saved album positions make it easy to return to a long album without losing your place.</p></article>
+        <article class="album-era-feature"><p class="album-era-feature-number">04</p><h2>Rediscover and explore</h2><p>Album Discovery brings back albums you have not heard recently and offers suggestions inspired by your Apple Music Library.</p></article>
+        <article class="album-era-feature"><p class="album-era-feature-number">05</p><h2>Bring albums into the car</h2><p>Browse shelves and albums and control playback through Album Era&rsquo;s focused CarPlay experience.</p></article>
+        <article class="album-era-feature"><p class="album-era-feature-number">06</p><h2>Keep your collection safe</h2><p>Optional iCloud sync keeps supported collection data available across your devices, while automatic local backups give you a recovery history inside the app.</p></article>
+      </section>
 
-            <section class="post-row">
-              <div class="post-date">Listen</div>
-              <div class="post-main">
-                <h2>Return to Albums</h2>
-                <p>
-                  Resume albums where you left off, rediscover albums you have not played recently, and bring your collection with you through CarPlay.
-                </p>
-              </div>
-            </section>
-          </div>
+      <section class="album-era-callout" aria-labelledby="availability-title">
+        <div>
+          <p class="eyebrow">Coming soon</p>
+          <h2 id="availability-title">Album Era is preparing for release.</h2>
+          <p>The App Store link will appear here after the app is publicly available. In the meantime, visit support for requirements and help, or read the privacy policy.</p>
+        </div>
+        <div class="album-era-actions">
+          <a class="album-era-button" href="support/">Get support</a>
+          <a class="album-era-text-link" href="privacy/">Read the privacy policy</a>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <p>© <span data-year></span> Brian Bishop</p>
+    <footer class="site-footer album-era-footer">
+      <nav aria-label="Album Era footer"><a href="./">Album Era</a><a href="support/">Support</a><a href="privacy/">Privacy</a><a href="../">Brian Bishop</a></nav>
+      <p>&copy; <span data-year></span> Brian Bishop</p>
     </footer>
-
     <script src="../script.js"></script>
   </body>
 </html>

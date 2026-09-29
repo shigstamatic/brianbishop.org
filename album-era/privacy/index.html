@@ -3,96 +3,85 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Album Era Privacy Policy</title>
-    <meta
-      name="description"
-      content="Privacy policy for Album Era, an album-first music library for Apple Music."
-    >
-    <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+    <title>Privacy Policy | Album Era</title>
+    <meta name="description" content="Privacy policy for Album Era, an independent, album-first companion for Apple Music.">
+    <meta property="og:title" content="Album Era Privacy Policy">
+    <meta property="og:description" content="How Album Era stores and handles app, Apple Music, iCloud, backup, and support information.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://brianbishop.org/album-era/privacy/">
+    <link rel="canonical" href="https://brianbishop.org/album-era/privacy/">
+    <link rel="icon" href="../assets/album-era-icon.png" type="image/png">
     <link rel="stylesheet" href="../../styles.css">
   </head>
   <body>
     <header class="site-header" data-site-header>
-      <a class="brand" href="../../" aria-label="Brian Bishop home">
-        <img class="brand-mark" src="../../assets/website_logo_placeholder.png" alt="" aria-hidden="true">
-        <span class="brand-text">
-          <span>Album Era</span>
-          <span class="brand-subtitle">Privacy Policy</span>
-        </span>
+      <a class="brand" href="../" aria-label="Album Era home">
+        <img class="brand-mark album-era-brand-mark" src="../assets/album-era-icon.png" alt="">
+        <span class="brand-text"><span>Album Era</span><span class="brand-subtitle">Privacy Policy</span></span>
       </a>
+      <nav class="nav" aria-label="Album Era">
+        <a href="../">Overview</a><a href="../support/">Support</a><a class="active" href="./" aria-current="page">Privacy</a>
+      </nav>
     </header>
 
-    <main id="top">
-      <section class="index-section" aria-labelledby="privacy-title">
-        <div class="index-inner">
-          <div class="index-heading">
-            <p class="eyebrow">Privacy</p>
-            <h2 id="privacy-title">Album Era Privacy Policy</h2>
-            <p class="index-note">Last updated: August 31, 2026</p>
-          </div>
+    <main class="album-era-shell album-era-document" id="top">
+      <header class="album-era-document-header">
+        <p class="eyebrow">Privacy</p>
+        <h1>Album Era Privacy Policy</h1>
+        <p class="album-era-policy-date">Published September 29, 2026</p>
+        <p class="album-era-lede">Album Era has no separate account system, advertising, tracking, third-party analytics, or developer-operated server that collects your music collection.</p>
+      </header>
 
-          <div class="post-list">
-            <section class="post-row">
-              <div class="post-date">Summary</div>
-              <div class="post-main">
-                <h2>Your Album Era Data</h2>
-                <p>
-                  Album Era stores your album collection, shelves, shelf labels, search history, playback state, listening stats, and discovery preferences on your device.
-                  If iCloud Sync is enabled, that data syncs through your private iCloud account.
-                </p>
-              </div>
-            </section>
-
-            <section class="post-row">
-              <div class="post-date">Access</div>
-              <div class="post-main">
-                <h2>Developer Access</h2>
-                <p>
-                  Album Era does not operate a separate developer server for your collection data, does not use advertising tracking, and does not include third-party analytics.
-                  Your private iCloud data is handled by Apple and is not visible in the developer portal.
-                </p>
-              </div>
-            </section>
-
-            <section class="post-row">
-              <div class="post-date">Apple</div>
-              <div class="post-main">
-                <h2>Apple Music and iCloud</h2>
-                <p>
-                  Album Era uses Apple Music for catalog search and playback, and uses iCloud for optional sync. Apple handles Apple Music account, subscription, catalog, playback, and iCloud service data under Apple's privacy policies.
-                </p>
-              </div>
-            </section>
-
-            <section class="post-row">
-              <div class="post-date">Controls</div>
-              <div class="post-main">
-                <h2>Your Controls</h2>
-                <p>
-                  You can clear resume states, listening stats, search history, sort preferences, shelf labels, discovery suggestions, local backups, or your full Album Era library from Settings.
-                  You can also export and restore local backups from inside the app.
-                </p>
-              </div>
-            </section>
-
-            <section class="post-row">
-              <div class="post-date">Contact</div>
-              <div class="post-main">
-                <h2>Contact</h2>
-                <p>
-                  For privacy questions, contact Brian Bishop through brianbishop.org.
-                </p>
-              </div>
-            </section>
-          </div>
+      <div class="album-era-document-grid">
+        <aside class="album-era-document-nav" aria-label="On this page">
+          <p>On this page</p>
+          <a href="#device-data">Data on your device</a><a href="#icloud">Optional iCloud sync</a><a href="#apple-music">Apple Music</a><a href="#backups">Backups and exports</a><a href="#controls">Your controls</a><a href="#support-data">Support email</a><a href="#website">This website</a><a href="#contact">Contact</a>
+        </aside>
+        <div class="album-era-prose">
+          <section id="device-data">
+            <h2>Data stored on your device</h2>
+            <p>Album Era stores the information needed to provide its features on your device. This can include collection metadata, shelves, shelf labels, Smart Shelf rules, search history, listening statistics, saved album positions, discovery preferences, and cached artwork.</p>
+            <p>Album Era does not download or store Apple Music audio. It does not include advertising SDKs, tracking technology, or third-party analytics, and it does not send your collection to a server operated by Brian Bishop.</p>
+          </section>
+          <section id="icloud">
+            <h2>Optional iCloud sync</h2>
+            <p>If you enable iCloud Sync, supported Album Era data is stored in your private CloudKit database and made available to your devices through the Apple account you use with iCloud. Brian Bishop does not receive your collection through this service and cannot view it in the developer portal.</p>
+            <p>Turning off iCloud Sync makes Album Era use local-only storage after relaunch. It does not delete data already stored in iCloud.</p>
+          </section>
+          <section id="apple-music">
+            <h2>Apple Music</h2>
+            <p>Album Era uses Apple Music access for catalog search, playback, and discovery that you initiate from your Apple Music Library. These features communicate with Apple&rsquo;s services. Apple handles Apple Music account, subscription, catalog, playback, and related service data under <a href="https://www.apple.com/legal/privacy/" rel="external">Apple&rsquo;s Privacy Policy</a>.</p>
+          </section>
+          <section id="backups">
+            <h2>Local backups and exported files</h2>
+            <p>Album Era automatically creates collection backups on your device. Its backup history is local and is not synced through iCloud by Album Era, although Apple&rsquo;s device backup or migration features may transfer local files.</p>
+            <p>You can export a backup as a JSON file and choose where to share or store it. An export contains Album Era collection data; it does not contain music audio or cached artwork image files. After export, the file is controlled by you and by any service or person with whom you choose to share it.</p>
+          </section>
+          <section id="controls">
+            <h2>Your controls</h2>
+            <p><strong>Settings &gt; Library Data</strong> provides controls for clearing saved album positions, listening statistics, search history, album sort preferences, shelf labels, and Album Discovery state. It also provides a control to erase library data from the current device.</p>
+            <p><strong>Settings &gt; Backups</strong> lets you restore or export an existing local backup. Library Data also includes a control for clearing local backup history. These app controls do not delete files you previously exported or data already stored in iCloud. Turning off iCloud Sync does not delete the iCloud-synced library.</p>
+          </section>
+          <section id="support-data">
+            <h2>Information you send for support</h2>
+            <p>If you email Album Era Support, the information you voluntarily provide&mdash;such as your email address, device and app details, description of an issue, or an attachment you choose to send&mdash;is used to respond to your request and troubleshoot the issue. Support email is separate from the app and is not data collected from Album Era.</p>
+          </section>
+          <section id="website">
+            <h2>This website</h2>
+            <p>These Album Era pages are static pages hosted by GitHub Pages. They do not use a contact form, advertising, analytics, or application cookies. GitHub may process technical connection information, including visitor IP addresses, to operate and secure GitHub Pages, as described in the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="external">GitHub General Privacy Statement</a>.</p>
+          </section>
+          <section id="contact">
+            <h2>Contact</h2>
+            <p>For questions about this policy or Album Era&rsquo;s privacy practices, email <a href="mailto:albumera@icloud.com?subject=Album%20Era%20Privacy">albumera@icloud.com</a>.</p>
+          </section>
         </div>
-      </section>
+      </div>
     </main>
 
-    <footer class="site-footer">
-      <p>© <span data-year></span> Brian Bishop</p>
+    <footer class="site-footer album-era-footer">
+      <nav aria-label="Album Era footer"><a href="../">Album Era</a><a href="../support/">Support</a><a href="./">Privacy</a><a href="../../">Brian Bishop</a></nav>
+      <p>&copy; <span data-year></span> Brian Bishop</p>
     </footer>
-
     <script src="../../script.js"></script>
   </body>
 </html>

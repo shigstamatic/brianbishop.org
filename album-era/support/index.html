@@ -3,76 +3,79 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Album Era Support</title>
-    <meta
-      name="description"
-      content="Support information for Album Era, an album-first music library for Apple Music."
-    >
-    <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+    <title>Support | Album Era</title>
+    <meta name="description" content="Help, requirements, backups, and contact information for Album Era.">
+    <meta property="og:title" content="Album Era Support">
+    <meta property="og:description" content="Help, requirements, backups, and contact information for Album Era.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://brianbishop.org/album-era/support/">
+    <link rel="canonical" href="https://brianbishop.org/album-era/support/">
+    <link rel="icon" href="../assets/album-era-icon.png" type="image/png">
     <link rel="stylesheet" href="../../styles.css">
   </head>
   <body>
     <header class="site-header" data-site-header>
-      <a class="brand" href="../../" aria-label="Brian Bishop home">
-        <img class="brand-mark" src="../../assets/website_logo_placeholder.png" alt="" aria-hidden="true">
-        <span class="brand-text">
-          <span>Album Era</span>
-          <span class="brand-subtitle">Support</span>
-        </span>
+      <a class="brand" href="../" aria-label="Album Era home">
+        <img class="brand-mark album-era-brand-mark" src="../assets/album-era-icon.png" alt="">
+        <span class="brand-text"><span>Album Era</span><span class="brand-subtitle">Support</span></span>
       </a>
+      <nav class="nav" aria-label="Album Era">
+        <a href="../">Overview</a><a class="active" href="./" aria-current="page">Support</a><a href="../privacy/">Privacy</a>
+      </nav>
     </header>
 
-    <main id="top">
-      <section class="index-section" aria-labelledby="support-title">
-        <div class="index-inner">
-          <div class="index-heading">
-            <p class="eyebrow">Support</p>
-            <h2 id="support-title">Album Era Support</h2>
-            <p class="index-note">
-              Album Era is an album-first music library for Apple Music. This page covers basic support information for users and App Store review.
-            </p>
-          </div>
+    <main class="album-era-shell album-era-document" id="top">
+      <header class="album-era-document-header">
+        <p class="eyebrow">Help and contact</p>
+        <h1>Album Era Support</h1>
+        <p class="album-era-lede">Need help with Album Era? Start with the guidance below or email <a href="mailto:albumera@icloud.com">albumera@icloud.com</a>.</p>
+      </header>
 
-          <div class="post-list">
-            <section class="post-row">
-              <div class="post-date">Help</div>
-              <div class="post-main">
-                <h2>Getting Started</h2>
-                <p>
-                  Album Era requires Apple Music access and an active Apple Music subscription for catalog search and playback.
-                  Use Search to add complete albums, Organize Shelves to curate your collection, and Album Discovery to find suggestions from your Apple Music Library.
-                </p>
-              </div>
-            </section>
-
-            <section class="post-row">
-              <div class="post-date">Data</div>
-              <div class="post-main">
-                <h2>Backups and Sync</h2>
-                <p>
-                  Album Era can sync your collection through your private iCloud account and automatically keeps local backups that can be restored from inside the app.
-                </p>
-              </div>
-            </section>
-
-            <section class="post-row">
-              <div class="post-date">Contact</div>
-              <div class="post-main">
-                <h2>Contact</h2>
-                <p>
-                  For support, contact Brian Bishop through brianbishop.org.
-                </p>
-              </div>
-            </section>
-          </div>
+      <div class="album-era-document-grid">
+        <aside class="album-era-document-nav" aria-label="On this page">
+          <p>On this page</p>
+          <a href="#requirements">Requirements</a><a href="#collection">Albums and shelves</a><a href="#sync">iCloud sync</a><a href="#backups">Backups and export</a><a href="#reporting">Report an issue</a>
+        </aside>
+        <div class="album-era-prose">
+          <section id="requirements">
+            <h2>Apple Music requirements</h2>
+            <p>Album Era requires permission to access Apple Music. Catalog search and playback require an active Apple Music subscription, which is purchased separately from Apple and is not included with the free Album Era app.</p>
+            <p>If search or playback is unavailable, confirm that your Apple Music subscription is active and that Album Era has Music access in your device&rsquo;s system settings.</p>
+          </section>
+          <section id="collection">
+            <h2>Add albums and organize shelves</h2>
+            <p>Use Search to find an album in the Apple Music catalog and add the complete album to your collection. Album Era saves albums as complete works rather than as individual tracks.</p>
+            <p>You can place an album on any number of custom shelves. You can also create Smart Shelves that update from rules such as artist, genre, release decade, or listening history. Removing a shelf does not delete the albums on it.</p>
+          </section>
+          <section id="sync">
+            <h2>Optional iCloud sync</h2>
+            <p>iCloud Sync uses the Apple account signed in on your device to sync supported Album Era collection data through your private iCloud database. You can turn it on or off in Album Era Settings. A relaunch is required after changing the setting.</p>
+            <p>Album Era&rsquo;s own backup history is local and is not synced through iCloud by the app. Apple&rsquo;s device backup or migration features may transfer those local files when you move to another device.</p>
+          </section>
+          <section id="backups">
+            <h2>Backups, export, and restore</h2>
+            <p>Open <strong>Settings &gt; Backups</strong> to view automatic local collection backups. From there, you can restore an existing backup from the in-app history or use the share control to export a backup as a JSON file and choose where to save or share it.</p>
+            <p>Restoring from an external file is not supported in the current release. Keep any exported JSON files somewhere you control; they contain collection information, but not downloaded music or cached artwork image files.</p>
+          </section>
+          <section id="reporting">
+            <h2>Report an issue</h2>
+            <p>Email <a href="mailto:albumera@icloud.com?subject=Album%20Era%20Support">albumera@icloud.com</a> and include:</p>
+            <ul><li>The Album Era version.</li><li>Your device model and operating-system version.</li><li>What you expected to happen and what happened instead.</li><li>The steps that reproduce the issue, if known.</li></ul>
+            <p>Please do not send an exported collection unless it is needed for a particular issue and you are comfortable providing it voluntarily.</p>
+          </section>
+          <section class="album-era-contact-card" aria-labelledby="contact-title">
+            <h2 id="contact-title">Still need help?</h2>
+            <p>Email Album Era Support and we will respond as soon as practical.</p>
+            <a class="album-era-button" href="mailto:albumera@icloud.com?subject=Album%20Era%20Support">Email albumera@icloud.com</a>
+          </section>
         </div>
-      </section>
+      </div>
     </main>
 
-    <footer class="site-footer">
-      <p>© <span data-year></span> Brian Bishop</p>
+    <footer class="site-footer album-era-footer">
+      <nav aria-label="Album Era footer"><a href="../">Album Era</a><a href="./">Support</a><a href="../privacy/">Privacy</a><a href="../../">Brian Bishop</a></nav>
+      <p>&copy; <span data-year></span> Brian Bishop</p>
     </footer>
-
     <script src="../../script.js"></script>
   </body>
 </html>
