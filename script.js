@@ -6,29 +6,40 @@ const addHomeContextHeader = () => {
     return;
   }
 
+  const siteRootPrefix = "../".repeat(window.location.pathname.replace(/\/$/, "").split("/").filter(Boolean).length);
+
   document.body.classList.add("home-context-active");
   document.body.insertAdjacentHTML(
     "afterbegin",
     `
       <header class="site-header home-context-header" data-site-header>
-        <a class="brand" href="../" aria-label="Brian Bishop home">
-          <img class="brand-mark" src="../assets/website_logo_placeholder.png" alt="" aria-hidden="true">
+        <a class="brand" href="${siteRootPrefix}" aria-label="Brian Bishop home">
+          <img class="brand-mark" src="${siteRootPrefix}assets/website_logo_placeholder.png" alt="" aria-hidden="true">
           <span class="brand-text">
             <span>Brian Bishop</span>
             <span class="brand-subtitle">Long-running builds, small experiments, field notes, photos.</span>
           </span>
         </a>
         <nav class="nav" aria-label="Brian Bishop sections">
-          <a href="../">All</a>
-          <a href="../?filter=physical">Physical</a>
-          <a class="active" href="../?filter=digital" aria-current="true">Digital</a>
-          <a href="../?filter=note">Notes</a>
-          <a href="../?filter=photo">Photos</a>
-          <a href="../?filter=ephemera">Ephemera</a>
+          <a href="${siteRootPrefix}">All</a>
+          <a href="${siteRootPrefix}?filter=physical">Physical</a>
+          <a class="active" href="${siteRootPrefix}?filter=digital" aria-current="true">Digital</a>
+          <a href="${siteRootPrefix}?filter=note">Notes</a>
+          <a href="${siteRootPrefix}?filter=photo">Photos</a>
+          <a href="${siteRootPrefix}?filter=ephemera">Ephemera</a>
         </nav>
       </header>
     `,
   );
+
+  document.querySelectorAll("a[href]").forEach((link) => {
+    const url = new URL(link.getAttribute("href"), window.location.href);
+
+    if (url.origin === window.location.origin && url.pathname.includes("/album-era/")) {
+      url.searchParams.set("from", "index");
+      link.setAttribute("href", `${url.pathname}${url.search}${url.hash}`);
+    }
+  });
 
   const homeContextHeader = document.querySelector(".home-context-header");
   const setHomeContextOffset = () => {
