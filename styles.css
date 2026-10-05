@@ -83,6 +83,12 @@ a {
   gap: 2px;
 }
 
+.brand-wordmark {
+  display: block;
+  width: 224px;
+  height: auto;
+}
+
 .brand-subtitle {
   color: var(--ink-soft);
   font-size: 0.78rem;
@@ -1158,7 +1164,12 @@ h3 {
   text-decoration-color: rgba(251, 250, 246, 0.45);
 }
 
-@media (max-width: 860px) {
+@media (max-width: 1040px) {
+  .index-section,
+  .entry {
+    padding-top: 190px;
+  }
+
   .site-header {
     align-items: flex-start;
     flex-direction: column;
@@ -1170,6 +1181,9 @@ h3 {
     max-width: 300px;
   }
 
+}
+
+@media (max-width: 860px) {
   .hero {
     min-height: 88svh;
     padding-top: 144px;
@@ -1246,11 +1260,11 @@ h3 {
   }
 
   .index-section {
-    padding-top: 142px;
+    padding-top: 190px;
   }
 
   .entry {
-    padding-top: 142px;
+    padding-top: 190px;
   }
 
   h1 {

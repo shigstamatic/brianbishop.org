@@ -14,9 +14,8 @@ const addHomeContextHeader = () => {
     `
       <header class="site-header home-context-header" data-site-header>
         <a class="brand" href="${siteRootPrefix}" aria-label="Brian Bishop home">
-          <img class="brand-mark" src="${siteRootPrefix}assets/website_logo_placeholder.png" alt="" aria-hidden="true">
           <span class="brand-text">
-            <span>Brian Bishop</span>
+            <img class="brand-wordmark" src="${siteRootPrefix}assets/brianbishop-wordmark.svg" width="1626" height="397" alt="Brian Bishop">
             <span class="brand-subtitle">Long-running builds, small experiments, field notes, photos.</span>
           </span>
         </a>

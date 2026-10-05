@@ -52,3 +52,9 @@ Before publishing or adding a new batch of content:
 - Keep drafts and private working notes outside this repository until they are ready to publish.
 - Use `.gitignore` for local files that should never be tracked.
 - If sensitive information is ever committed, assume it was exposed. Remove it, rotate any affected secret, and clean history only if necessary.
+
+## Website identity
+
+The approved logo reference is `assets/branding/approved-wordmark-preview.png`. The production wordmark is `assets/brianbishop-wordmark.svg`, traced into paths from that reference with a transparent background. Its colors are forest green (`#2e3d31`) for the two b letters and corner brackets, and rust (`#9b4f2f`) for the other letters. It uses no external fonts.
+
+The header displays the wordmark at 224px wide, with the subtitle below. `assets/favicon.svg` reuses the approved b shape as a compact bb mark. Album Era retains its own app icon; its contextual Brian Bishop header uses the shared wordmark.
