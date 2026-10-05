@@ -1,3 +1,50 @@
+const addHomeContextHeader = () => {
+  const params = new URLSearchParams(window.location.search);
+  const isAlbumEraPage = document.querySelector(".album-era-shell");
+
+  if (!isAlbumEraPage || params.get("from") !== "index") {
+    return;
+  }
+
+  document.body.classList.add("home-context-active");
+  document.body.insertAdjacentHTML(
+    "afterbegin",
+    `
+      <header class="site-header home-context-header" data-site-header>
+        <a class="brand" href="../" aria-label="Brian Bishop home">
+          <img class="brand-mark" src="../assets/website_logo_placeholder.png" alt="" aria-hidden="true">
+          <span class="brand-text">
+            <span>Brian Bishop</span>
+            <span class="brand-subtitle">Long-running builds, small experiments, field notes, photos.</span>
+          </span>
+        </a>
+        <nav class="nav" aria-label="Brian Bishop sections">
+          <a href="../">All</a>
+          <a href="../?filter=physical">Physical</a>
+          <a class="active" href="../?filter=digital" aria-current="true">Digital</a>
+          <a href="../?filter=note">Notes</a>
+          <a href="../?filter=photo">Photos</a>
+          <a href="../?filter=ephemera">Ephemera</a>
+        </nav>
+      </header>
+    `,
+  );
+
+  const homeContextHeader = document.querySelector(".home-context-header");
+  const setHomeContextOffset = () => {
+    document.documentElement.style.setProperty(
+      "--home-context-header-height",
+      `${homeContextHeader?.offsetHeight || 78}px`,
+    );
+  };
+
+  setHomeContextOffset();
+  window.addEventListener("resize", setHomeContextOffset);
+  window.requestAnimationFrame(setHomeContextOffset);
+};
+
+addHomeContextHeader();
+
 const header = document.querySelector("[data-site-header]");
 const filterButtons = document.querySelectorAll("[data-filter]");
 const categoryItems = document.querySelectorAll("[data-category]");

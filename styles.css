@@ -119,6 +119,7 @@ a {
 }
 
 .nav a:hover,
+.nav a.active,
 .nav-filter:hover,
 .nav-filter.active {
   background: var(--ink);
@@ -132,6 +133,15 @@ a {
 }
 
 .album-era-brand-mark { border-radius: 8px; }
+
+.home-context-active .site-header:not(.home-context-header) {
+  margin-top: var(--home-context-header-height, 78px);
+  position: static;
+}
+
+.home-context-active .album-era-shell {
+  padding-top: clamp(48px, 6vw, 72px);
+}
 
 .album-era-shell {
   margin: 0 auto;
@@ -388,6 +398,7 @@ a {
 
 @media (max-width: 560px) {
   .album-era-shell { padding-top: 132px; }
+  .home-context-active .album-era-shell { padding-top: 48px; }
   .album-era-hero h1,
   .album-era-document-header h1 { font-size: clamp(2.7rem, 13vw, 4.2rem); }
   .album-era-feature-grid { grid-template-columns: 1fr; }
