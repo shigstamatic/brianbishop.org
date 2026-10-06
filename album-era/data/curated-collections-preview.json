@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "revision": 1,
+  "collections": [
+    {
+      "id": "greatest-albums-short-list",
+      "title": "Greatest Albums Short List",
+      "description": "Just a short list of some of the greatest albums of all time.",
+      "curator": "Brian Bishop",
+      "enabled": true,
+      "displayOrder": 0,
+      "revision": 1,
+      "schedule": { "kind": "always" },
+      "albums": [
+        { "id": "1538081586", "title": "What's Going On", "artist": "Marvin Gaye" },
+        { "id": "1440841241", "title": "Pet Sounds", "artist": "The Beach Boys" },
+        { "id": "269572838", "title": "Thriller", "artist": "Michael Jackson" },
+        { "id": "1474815798", "title": "Abbey Road (2019 Mix)", "artist": "The Beatles" },
+        { "id": "1440783617", "title": "Nevermind", "artist": "Nirvana" },
+        { "id": "1065973699", "title": "The Dark Side of the Moon", "artist": "Pink Floyd" }
+      ]
+    }
+  ]
+}
