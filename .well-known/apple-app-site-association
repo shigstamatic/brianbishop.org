@@ -1,0 +1,8 @@
+{
+  "applinks": {
+    "details": [{
+      "appIDs": ["HPW7YZGTHU.com.brianbishop.Sleevr"],
+      "components": [{ "/": "/album-era/shared-shelf/" }]
+    }]
+  }
+}
