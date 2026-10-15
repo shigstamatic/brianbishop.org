@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 2,
+  "revision": 3,
   "collections": [
     {
       "id": "greatest-albums-short-list",
@@ -24,15 +24,16 @@
       "id": "best-cover-art",
       "title": "Best Cover Art",
       "description": "The all-time best album covers!",
-      "curator": "Brian Bishop",
+      "curator": "Lunar Maestro Kit",
       "enabled": true,
       "displayOrder": 1,
-      "revision": 1,
+      "revision": 2,
       "schedule": { "kind": "always" },
       "albums": [
         { "id": "542457483", "title": "Schemer-Dreamer", "artist": "Steve Walsh" },
         { "id": "693584837", "title": "Rio (Remastered)", "artist": "Duran Duran" },
-        { "id": "716217726", "title": "Spring Session M", "artist": "Missing Persons" }
+        { "id": "716217726", "title": "Spring Session M", "artist": "Missing Persons" },
+        { "id": "62442885", "title": "Upstairs at Eric's", "artist": "Yaz" }
       ]
     }
   ]
