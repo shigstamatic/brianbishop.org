@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 4,
+  "revision": 5,
   "collections": [
     {
       "id": "greatest-albums-short-list",
@@ -43,11 +43,11 @@
       "curator": "Brian Bishop",
       "enabled": true,
       "displayOrder": 2,
-      "revision": 1,
+      "revision": 2,
       "schedule": {
         "kind": "dateRange",
         "start": "2026-10-14",
-        "end": "2026-10-16",
+        "end": "2026-10-14",
         "timeZone": "America/Chicago"
       },
       "albums": [
