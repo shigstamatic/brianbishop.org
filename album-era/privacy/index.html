@@ -28,34 +28,51 @@
       <header class="album-era-document-header">
         <p class="eyebrow">Privacy</p>
         <h1>Album Era Privacy Policy</h1>
-        <p class="album-era-policy-date">Published September 29, 2026</p>
+        <p class="album-era-policy-date">Updated October 16, 2026</p>
         <p class="album-era-lede">Album Era has no separate account system, advertising, tracking, third-party analytics, or developer-operated server that collects your music collection.</p>
       </header>
 
       <div class="album-era-document-grid">
         <aside class="album-era-document-nav" aria-label="On this page">
           <p>On this page</p>
-          <a href="#device-data">Data on your device</a><a href="#icloud">Optional iCloud sync</a><a href="#apple-music">Apple Music</a><a href="#backups">Backups and exports</a><a href="#controls">Your controls</a><a href="#support-data">Support email</a><a href="#website">This website</a><a href="#contact">Contact</a>
+          <a href="#device-data">Data on your device</a><a href="#icloud">Optional iCloud sync</a><a href="#apple-music">Apple Music</a><a href="#curated">Curated Collections</a><a href="#sharing">Sharing shelves</a><a href="#submissions">Editorial submissions</a><a href="#backups">Backups and exports</a><a href="#controls">Your controls</a><a href="#support-data">Support email</a><a href="#website">This website</a><a href="#contact">Contact</a>
         </aside>
         <div class="album-era-prose">
           <section id="device-data">
             <h2>Data stored on your device</h2>
-            <p>Album Era stores the information needed to provide its features on your device. This can include collection metadata, shelves, shelf labels, Smart Shelf rules, search history, listening statistics, saved album positions, discovery preferences, and cached artwork.</p>
-            <p>Album Era does not download or store Apple Music audio. It does not include advertising SDKs, tracking technology, or third-party analytics, and it does not send your collection to a server operated by Brian Bishop.</p>
+            <p>Album Era stores the information needed to provide its features on your device. This can include collection metadata, shelves, shelf labels, Smart Shelf rules, search history, listening statistics, saved album positions, discovery preferences, a saved curator display name or pseudonym, and cached artwork.</p>
+            <p>Album Era does not download or store Apple Music audio. It does not include advertising SDKs, tracking technology, or third-party analytics, and it does not automatically upload your collection to Brian Bishop. Sharing a shelf or submitting a list is a separate action you choose.</p>
           </section>
           <section id="icloud">
             <h2>Optional iCloud sync</h2>
-            <p>If you enable iCloud Sync, supported Album Era data is stored in your private CloudKit database and made available to your devices through the Apple account you use with iCloud. Brian Bishop does not receive your collection through this service and cannot view it in the developer portal.</p>
+            <p>If you enable iCloud Sync, supported Album Era data is stored in your private CloudKit database and made available to your devices through the Apple account you use with iCloud. Your saved curator display name or pseudonym can sync through this private storage. Brian Bishop does not receive your collection through this service and cannot view it in the developer portal.</p>
             <p>Turning off iCloud Sync makes Album Era use local-only storage after relaunch. It does not delete data already stored in iCloud.</p>
           </section>
           <section id="apple-music">
             <h2>Apple Music</h2>
-            <p>Album Era uses Apple Music access for catalog search, playback, and discovery that you initiate from your Apple Music Library. These features communicate with Apple&rsquo;s services. Apple handles Apple Music account, subscription, catalog, playback, and related service data under <a href="https://www.apple.com/legal/privacy/" rel="external">Apple&rsquo;s Privacy Policy</a>.</p>
+            <p>Album Era uses Apple Music access for catalog search, playback, and discovery that you initiate from your Apple Music Library. Browsing albums in Curated Collections and importing shared shelves also use Apple&rsquo;s catalog services. These features communicate with Apple&rsquo;s services. Apple handles Apple Music account, subscription, catalog, playback, and related service data under <a href="https://www.apple.com/legal/privacy/" rel="external">Apple&rsquo;s Privacy Policy</a>.</p>
+          </section>
+          <section id="curated">
+            <h2>Curated Collections</h2>
+            <p>In Album Era 1.1, Curated Collections downloads a public list of recommended albums from Brian Bishop&rsquo;s website, hosted by GitHub Pages. These requests do not upload your collection or listening history. GitHub may process ordinary request information, including your IP address, as described under <a href="#website">This website</a>.</p>
+          </section>
+          <section id="sharing">
+            <h2>Sharing shelves</h2>
+            <p>Sharing in Album Era 1.1 is voluntary. A shared shelf contains its title, curator name, optional description, and ordered Apple Music album identifiers, titles, and artists. It does not include listening history, saved playback positions, labels, or Smart Shelf rules.</p>
+            <p>An ordinary share contains either a self-contained link or a JSON file, not both. A shared link encodes the shelf in the part of the URL after the # symbol, called the fragment. The static fallback page does not decode or upload that shelf content.</p>
+            <p>The recipients and sharing service you choose receive the material you share. Anyone who receives the link or file may be able to read or forward it; a shared link is not a promise of secrecy or anonymity.</p>
+          </section>
+          <section id="submissions">
+            <h2>Submitting a curated list</h2>
+            <p>Submit to Album Era lets you voluntarily send a JSON attachment by email for editorial consideration. This is separate from automatic app activity and does not automatically upload your collection. Submission does not guarantee publication.</p>
+            <p>If your submission is selected for publication, the curated list and your chosen curator name may remain publicly available until withdrawn. To request removal, contact <a href="mailto:albumera@icloud.com?subject=Album%20Era%20Removal%20Request">albumera@icloud.com</a>.</p>
+            <p>Submission emails and JSON attachments are retained for up to two years after our most recent correspondence, unless needed longer to resolve an ongoing support request or meet legal or security obligations. This applies equally to accepted, rejected, and never-published submissions. Published curated lists and their attribution have a separate lifetime, as described above.</p>
+            <p>Removing a published list does not automatically delete its submission correspondence. You can also request deletion of that correspondence by emailing <a href="mailto:albumera@icloud.com?subject=Album%20Era%20Submission%20Deletion%20Request">albumera@icloud.com</a>, subject to any necessary legal or security retention.</p>
           </section>
           <section id="backups">
             <h2>Local backups and exported files</h2>
             <p>Album Era automatically creates collection backups on your device. Its backup history is local and is not synced through iCloud by Album Era, although Apple&rsquo;s device backup or migration features may transfer local files.</p>
-            <p>You can export a backup as a JSON file and choose where to share or store it. An export contains Album Era collection data; it does not contain music audio or cached artwork image files. After export, the file is controlled by you and by any service or person with whom you choose to share it.</p>
+            <p>You can export a backup as a JSON file and choose where to share or store it. An export contains Album Era collection data, including your saved curator display name or pseudonym; it does not contain music audio or cached artwork image files. After export, the file is controlled by you and by any service or person with whom you choose to share it.</p>
           </section>
           <section id="controls">
             <h2>Your controls</h2>

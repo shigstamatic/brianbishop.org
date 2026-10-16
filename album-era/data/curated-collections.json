@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "revision": 8,
+  "collections": [
+    {
+      "id": "greatest-albums-short-list",
+      "title": "Greatest Albums Short List",
+      "description": "Just a short list of some of the greatest albums of all time.",
+      "curator": "Brian Bishop",
+      "enabled": true,
+      "displayOrder": 0,
+      "revision": 1,
+      "schedule": { "kind": "always" },
+      "albums": [
+        { "id": "1538081586", "title": "What's Going On", "artist": "Marvin Gaye" },
+        { "id": "1440841241", "title": "Pet Sounds", "artist": "The Beach Boys" },
+        { "id": "269572838", "title": "Thriller", "artist": "Michael Jackson" },
+        { "id": "1474815798", "title": "Abbey Road (2019 Mix)", "artist": "The Beatles" },
+        { "id": "1440783617", "title": "Nevermind", "artist": "Nirvana" },
+        { "id": "1065973699", "title": "The Dark Side of the Moon", "artist": "Pink Floyd" }
+      ]
+    },
+    {
+      "id": "best-cover-art",
+      "title": "Best Cover Art",
+      "description": "The all-time best album covers!",
+      "curator": "Lunar Maestro Kit",
+      "enabled": true,
+      "displayOrder": 1,
+      "revision": 2,
+      "schedule": { "kind": "always" },
+      "albums": [
+        { "id": "542457483", "title": "Schemer-Dreamer", "artist": "Steve Walsh" },
+        { "id": "693584837", "title": "Rio (Remastered)", "artist": "Duran Duran" },
+        { "id": "716217726", "title": "Spring Session M", "artist": "Missing Persons" },
+        { "id": "62442885", "title": "Upstairs at Eric's", "artist": "Yaz" }
+      ]
+    }
+  ]
+}
