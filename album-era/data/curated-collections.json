@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 8,
+  "revision": 9,
   "collections": [
     {
       "id": "greatest-albums-short-list",
@@ -10,14 +10,40 @@
       "enabled": true,
       "displayOrder": 0,
       "revision": 1,
-      "schedule": { "kind": "always" },
+      "schedule": {
+        "kind": "always"
+      },
       "albums": [
-        { "id": "1538081586", "title": "What's Going On", "artist": "Marvin Gaye" },
-        { "id": "1440841241", "title": "Pet Sounds", "artist": "The Beach Boys" },
-        { "id": "269572838", "title": "Thriller", "artist": "Michael Jackson" },
-        { "id": "1474815798", "title": "Abbey Road (2019 Mix)", "artist": "The Beatles" },
-        { "id": "1440783617", "title": "Nevermind", "artist": "Nirvana" },
-        { "id": "1065973699", "title": "The Dark Side of the Moon", "artist": "Pink Floyd" }
+        {
+          "id": "1538081586",
+          "title": "What's Going On",
+          "artist": "Marvin Gaye"
+        },
+        {
+          "id": "1440841241",
+          "title": "Pet Sounds",
+          "artist": "The Beach Boys"
+        },
+        {
+          "id": "269572838",
+          "title": "Thriller",
+          "artist": "Michael Jackson"
+        },
+        {
+          "id": "1474815798",
+          "title": "Abbey Road (2019 Mix)",
+          "artist": "The Beatles"
+        },
+        {
+          "id": "1440783617",
+          "title": "Nevermind",
+          "artist": "Nirvana"
+        },
+        {
+          "id": "1065973699",
+          "title": "The Dark Side of the Moon",
+          "artist": "Pink Floyd"
+        }
       ]
     },
     {
@@ -28,12 +54,556 @@
       "enabled": true,
       "displayOrder": 1,
       "revision": 2,
-      "schedule": { "kind": "always" },
+      "schedule": {
+        "kind": "always"
+      },
       "albums": [
-        { "id": "542457483", "title": "Schemer-Dreamer", "artist": "Steve Walsh" },
-        { "id": "693584837", "title": "Rio (Remastered)", "artist": "Duran Duran" },
-        { "id": "716217726", "title": "Spring Session M", "artist": "Missing Persons" },
-        { "id": "62442885", "title": "Upstairs at Eric's", "artist": "Yaz" }
+        {
+          "id": "542457483",
+          "title": "Schemer-Dreamer",
+          "artist": "Steve Walsh"
+        },
+        {
+          "id": "693584837",
+          "title": "Rio (Remastered)",
+          "artist": "Duran Duran"
+        },
+        {
+          "id": "716217726",
+          "title": "Spring Session M",
+          "artist": "Missing Persons"
+        },
+        {
+          "id": "62442885",
+          "title": "Upstairs at Eric's",
+          "artist": "Yaz"
+        }
+      ]
+    },
+    {
+      "id": "100-acclaimed-90s-albums",
+      "title": "100 Acclaimed 90s Albums",
+      "description": "A personal selection of 100 acclaimed albums from the 1990s, presented without ranking. Adapted by Brian Bishop from \"List of 1990s albums considered the best\" by Wikipedia contributors (revision 1381251889): https://en.wikipedia.org/w/index.php?title=List_of_1990s_albums_considered_the_best&oldid=1381251889. Selected 99 entries, added Stone Temple Pilots' Core, and matched US Apple Music editions. The adapted list is offered under CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/. No Wikipedia/Wikimedia endorsement. Music, artwork, and third-party catalog metadata are not covered by this list license.",
+      "curator": "Brian Bishop",
+      "enabled": true,
+      "displayOrder": 2,
+      "revision": 1,
+      "schedule": {
+        "kind": "always"
+      },
+      "albums": [
+        {
+          "id": "298111036",
+          "title": "Flood",
+          "artist": "They Might Be Giants"
+        },
+        {
+          "id": "665404621",
+          "title": "Violator",
+          "artist": "Depeche Mode"
+        },
+        {
+          "id": "1806751228",
+          "title": "People's Instinctive Travels and the Paths of Rhythm (25th Anniversary Edition)",
+          "artist": "A Tribe Called Quest"
+        },
+        {
+          "id": "1440837282",
+          "title": "Fear of a Black Planet",
+          "artist": "Public Enemy"
+        },
+        {
+          "id": "1440838993",
+          "title": "Goo",
+          "artist": "Sonic Youth"
+        },
+        {
+          "id": "724648893",
+          "title": "Rust In Peace",
+          "artist": "Megadeth"
+        },
+        {
+          "id": "1645126133",
+          "title": "Behaviour (2018 Remaster)",
+          "artist": "Pet Shop Boys"
+        },
+        {
+          "id": "345100584",
+          "title": "O.G. Original Gangster",
+          "artist": "Ice T"
+        },
+        {
+          "id": "1572046434",
+          "title": "Metallica (Remastered)",
+          "artist": "Metallica"
+        },
+        {
+          "id": "425465247",
+          "title": "Ten",
+          "artist": "Pearl Jam"
+        },
+        {
+          "id": "1444218854",
+          "title": "Laughing Stock",
+          "artist": "Talk Talk"
+        },
+        {
+          "id": "6778538818",
+          "title": "Trompe le Monde (2026 Remaster)",
+          "artist": "Pixies"
+        },
+        {
+          "id": "1440783617",
+          "title": "Nevermind",
+          "artist": "Nirvana"
+        },
+        {
+          "id": "278911460",
+          "title": "The Low End Theory",
+          "artist": "A Tribe Called Quest"
+        },
+        {
+          "id": "945581828",
+          "title": "Blood Sugar Sex Magik",
+          "artist": "Red Hot Chili Peppers"
+        },
+        {
+          "id": "1443063058",
+          "title": "Achtung Baby",
+          "artist": "U2"
+        },
+        {
+          "id": "961925135",
+          "title": "Little Earthquakes (Deluxe Edition)",
+          "artist": "Tori Amos"
+        },
+        {
+          "id": "206896698",
+          "title": "Generation Terrorists",
+          "artist": "Manic Street Preachers"
+        },
+        {
+          "id": "715906160",
+          "title": "3 Years, 5 Months and 2 Days In the Life Of...",
+          "artist": "Arrested Development"
+        },
+        {
+          "id": "1443489023",
+          "title": "Dry",
+          "artist": "PJ Harvey"
+        },
+        {
+          "id": "724303425",
+          "title": "Check Your Head (Deluxe Edition) [Remastered 2009]",
+          "artist": "Beastie Boys"
+        },
+        {
+          "id": "1636270983",
+          "title": "Wish (30th Anniversary Remaster)",
+          "artist": "The Cure"
+        },
+        {
+          "id": "1444056030",
+          "title": "The Southern Harmony and Musical Companion",
+          "artist": "The Black Crowes"
+        },
+        {
+          "id": "184672979",
+          "title": "Angel Dust",
+          "artist": "Faith No More"
+        },
+        {
+          "id": "818695941",
+          "title": "Your Arsenal (Definitive Master)",
+          "artist": "Morrissey"
+        },
+        {
+          "id": "157316517",
+          "title": "Dirt (Remastered)",
+          "artist": "Alice In Chains"
+        },
+        {
+          "id": "1440949853",
+          "title": "Automatic For The People",
+          "artist": "R.E.M."
+        },
+        {
+          "id": "191450810",
+          "title": "Rage Against the Machine",
+          "artist": "Rage Against the Machine"
+        },
+        {
+          "id": "1668460963",
+          "title": "The Chronic",
+          "artist": "Dr. Dre"
+        },
+        {
+          "id": "1887617145",
+          "title": "Everybody Else Is Doing It, So Why Can't We? (Deluxe / Remastered 2026)",
+          "artist": "The Cranberries"
+        },
+        {
+          "id": "300205427",
+          "title": "Debut",
+          "artist": "Björk"
+        },
+        {
+          "id": "721207206",
+          "title": "Siamese Dream",
+          "artist": "The Smashing Pumpkins"
+        },
+        {
+          "id": "1251495447",
+          "title": "Last Splash",
+          "artist": "The Breeders"
+        },
+        {
+          "id": "1440830905",
+          "title": "In Utero (20th Anniversary Super Deluxe Edition)",
+          "artist": "Nirvana"
+        },
+        {
+          "id": "1645236674",
+          "title": "Very (2018 Remaster)",
+          "artist": "Pet Shop Boys"
+        },
+        {
+          "id": "1440848808",
+          "title": "So Tonight That I Might See",
+          "artist": "Mazzy Star"
+        },
+        {
+          "id": "1746566237",
+          "title": "Enter the Wu-Tang (36 Chambers)",
+          "artist": "Wu-Tang Clan"
+        },
+        {
+          "id": "265670545",
+          "title": "Midnight Marauders",
+          "artist": "A Tribe Called Quest"
+        },
+        {
+          "id": "1676306182",
+          "title": "Doggystyle",
+          "artist": "Snoop Dogg"
+        },
+        {
+          "id": "1160081985",
+          "title": "Dookie",
+          "artist": "Green Day"
+        },
+        {
+          "id": "1440837096",
+          "title": "The Downward Spiral",
+          "artist": "Nine Inch Nails"
+        },
+        {
+          "id": "1440811129",
+          "title": "Superunknown (20th Anniversary)",
+          "artist": "Soundgarden"
+        },
+        {
+          "id": "1445732603",
+          "title": "Live Through This",
+          "artist": "Hole"
+        },
+        {
+          "id": "1435811806",
+          "title": "Let Love In (2011 Remaster)",
+          "artist": "Nick Cave & The Bad Seeds"
+        },
+        {
+          "id": "1442245246",
+          "title": "American Recordings",
+          "artist": "Johnny Cash"
+        },
+        {
+          "id": "1440869641",
+          "title": "Weezer (Deluxe Edition)",
+          "artist": "Weezer"
+        },
+        {
+          "id": "513245412",
+          "title": "Teenager of the Year",
+          "artist": "Frank Black"
+        },
+        {
+          "id": "724943000",
+          "title": "Ill Communication",
+          "artist": "Beastie Boys"
+        },
+        {
+          "id": "1483792702",
+          "title": "Purple (2019 Remaster)",
+          "artist": "Stone Temple Pilots"
+        },
+        {
+          "id": "500162485",
+          "title": "Music for the Jilted Generation",
+          "artist": "The Prodigy"
+        },
+        {
+          "id": "1046187510",
+          "title": "Grace",
+          "artist": "Jeff Buckley"
+        },
+        {
+          "id": "1440653096",
+          "title": "Dummy",
+          "artist": "Portishead"
+        },
+        {
+          "id": "1525936190",
+          "title": "Definitely Maybe (Deluxe Edition Remastered)",
+          "artist": "Oasis"
+        },
+        {
+          "id": "520002126",
+          "title": "The Holy Bible",
+          "artist": "Manic Street Preachers"
+        },
+        {
+          "id": "892018539",
+          "title": "Wildflowers",
+          "artist": "Tom Petty"
+        },
+        {
+          "id": "270246704",
+          "title": "CrazySexyCool",
+          "artist": "TLC"
+        },
+        {
+          "id": "1097862703",
+          "title": "The Bends",
+          "artist": "Radiohead"
+        },
+        {
+          "id": "300205609",
+          "title": "Post",
+          "artist": "Björk"
+        },
+        {
+          "id": "1051418903",
+          "title": "Jagged Little Pill (Deluxe Edition)",
+          "artist": "Alanis Morissette"
+        },
+        {
+          "id": "258512042",
+          "title": "Foo Fighters",
+          "artist": "Foo Fighters"
+        },
+        {
+          "id": "1440827138",
+          "title": "Garbage (20th Anniversary Edition) [2015 Remaster]",
+          "artist": "Garbage"
+        },
+        {
+          "id": "1517447039",
+          "title": "(What's the Story) Morning Glory?",
+          "artist": "Oasis"
+        },
+        {
+          "id": "1455510683",
+          "title": "Mellon Collie and the Infinite Sadness (Deluxe Edition)",
+          "artist": "The Smashing Pumpkins"
+        },
+        {
+          "id": "1588492978",
+          "title": "All Eyez On Me",
+          "artist": "2Pac"
+        },
+        {
+          "id": "1054461239",
+          "title": "The Score",
+          "artist": "Fugees"
+        },
+        {
+          "id": "193875537",
+          "title": "Everything Must Go",
+          "artist": "Manic Street Preachers"
+        },
+        {
+          "id": "1510827144",
+          "title": "Odelay",
+          "artist": "Beck"
+        },
+        {
+          "id": "6784800667",
+          "title": "Reasonable Doubt",
+          "artist": "JAŸ-Z"
+        },
+        {
+          "id": "298566410",
+          "title": "ATLiens",
+          "artist": "Outkast"
+        },
+        {
+          "id": "1474185335",
+          "title": "Ænima",
+          "artist": "TOOL"
+        },
+        {
+          "id": "1440898333",
+          "title": "Pinkerton",
+          "artist": "Weezer"
+        },
+        {
+          "id": "1440804350",
+          "title": "Antichrist Superstar",
+          "artist": "Marilyn Manson"
+        },
+        {
+          "id": "926196086",
+          "title": "Being There",
+          "artist": "Wilco"
+        },
+        {
+          "id": "281111401",
+          "title": "Richard D. James Album",
+          "artist": "Aphex Twin"
+        },
+        {
+          "id": "787069899",
+          "title": "Blur (2012 Remaster)",
+          "artist": "Blur"
+        },
+        {
+          "id": "158714886",
+          "title": "Whatever and Ever Amen",
+          "artist": "Ben Folds Five"
+        },
+        {
+          "id": "714366008",
+          "title": "Dig Your Own Hole",
+          "artist": "The Chemical Brothers"
+        },
+        {
+          "id": "1097861387",
+          "title": "OK Computer",
+          "artist": "Radiohead"
+        },
+        {
+          "id": "500162127",
+          "title": "The Fat of the Land",
+          "artist": "The Prodigy"
+        },
+        {
+          "id": "1440883122",
+          "title": "Urban Hymns (Super Deluxe / Remastered 2016)",
+          "artist": "The Verve"
+        },
+        {
+          "id": "1566174024",
+          "title": "The Lonesome Crowded West",
+          "artist": "Modest Mouse"
+        },
+        {
+          "id": "693063670",
+          "title": "Moon Safari",
+          "artist": "Air"
+        },
+        {
+          "id": "1444101871",
+          "title": "Mark Hollis",
+          "artist": "Mark Hollis"
+        },
+        {
+          "id": "952887",
+          "title": "Ray of Light",
+          "artist": "Madonna"
+        },
+        {
+          "id": "281116024",
+          "title": "Music Has the Right to Children",
+          "artist": "Boards of Canada"
+        },
+        {
+          "id": "724466069",
+          "title": "Mezzanine",
+          "artist": "Massive Attack"
+        },
+        {
+          "id": "1276760743",
+          "title": "The Miseducation of Lauryn Hill",
+          "artist": "Lauryn Hill"
+        },
+        {
+          "id": "1536669507",
+          "title": "Aquemini",
+          "artist": "Outkast"
+        },
+        {
+          "id": "1479929235",
+          "title": "Things Fall Apart",
+          "artist": "The Roots"
+        },
+        {
+          "id": "1440835991",
+          "title": "The Slim Shady LP",
+          "artist": "Eminem"
+        },
+        {
+          "id": "926190405",
+          "title": "Summerteeth",
+          "artist": "Wilco"
+        },
+        {
+          "id": "699610409",
+          "title": "13",
+          "artist": "Blur"
+        },
+        {
+          "id": "281242279",
+          "title": "Play & Play: B Sides",
+          "artist": "Moby"
+        },
+        {
+          "id": "945575406",
+          "title": "Californication (Remastered)",
+          "artist": "Red Hot Chili Peppers"
+        },
+        {
+          "id": "1447442814",
+          "title": "Ágætis Byrjun",
+          "artist": "Sigur Rós"
+        },
+        {
+          "id": "1440836334",
+          "title": "The Fragile",
+          "artist": "Nine Inch Nails"
+        },
+        {
+          "id": "1444213589",
+          "title": "Black On Both Sides",
+          "artist": "Mos Def"
+        },
+        {
+          "id": "192816635",
+          "title": "The Battle of Los Angeles",
+          "artist": "Rage Against the Machine"
+        },
+        {
+          "id": "153019510",
+          "title": "When the Pawn...",
+          "artist": "Fiona Apple"
+        },
+        {
+          "id": "1285806791",
+          "title": "Core (Remastered)",
+          "artist": "Stone Temple Pilots"
+        }
+      ],
+      "credits": [
+        {
+          "sourceName": "Wikipedia: List of 1990s albums considered the best",
+          "attribution": "Adapted from \"List of 1990s albums considered the best\" by Wikipedia contributors, revision 1381251889. Selection and adaptation by Brian Bishop. The adapted list is offered under Creative Commons Attribution-ShareAlike 4.0 International. No Wikipedia or Wikimedia endorsement is implied. This license does not cover music, artwork, or third-party catalog metadata.",
+          "sourceURL": "https://en.wikipedia.org/w/index.php?title=List_of_1990s_albums_considered_the_best&oldid=1381251889",
+          "license": {
+            "name": "CC BY-SA 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+          },
+          "changes": "Selected 99 of the 234 source entries, added Core by Stone Temple Pilots, and matched the selections to US Apple Music editions. Source order is retained for the selected entries; Core is appended. This is not a ranking. No publisher commentary or artwork was copied."
+        }
       ]
     }
   ]
