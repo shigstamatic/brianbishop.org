@@ -1,93 +1,15 @@
 {
   "schemaVersion": 1,
-  "revision": 9,
+  "revision": 10,
   "collections": [
-    {
-      "id": "greatest-albums-short-list",
-      "title": "Greatest Albums Short List",
-      "description": "Just a short list of some of the greatest albums of all time.",
-      "curator": "Brian Bishop",
-      "enabled": true,
-      "displayOrder": 0,
-      "revision": 1,
-      "schedule": {
-        "kind": "always"
-      },
-      "albums": [
-        {
-          "id": "1538081586",
-          "title": "What's Going On",
-          "artist": "Marvin Gaye"
-        },
-        {
-          "id": "1440841241",
-          "title": "Pet Sounds",
-          "artist": "The Beach Boys"
-        },
-        {
-          "id": "269572838",
-          "title": "Thriller",
-          "artist": "Michael Jackson"
-        },
-        {
-          "id": "1474815798",
-          "title": "Abbey Road (2019 Mix)",
-          "artist": "The Beatles"
-        },
-        {
-          "id": "1440783617",
-          "title": "Nevermind",
-          "artist": "Nirvana"
-        },
-        {
-          "id": "1065973699",
-          "title": "The Dark Side of the Moon",
-          "artist": "Pink Floyd"
-        }
-      ]
-    },
-    {
-      "id": "best-cover-art",
-      "title": "Best Cover Art",
-      "description": "The all-time best album covers!",
-      "curator": "Lunar Maestro Kit",
-      "enabled": true,
-      "displayOrder": 1,
-      "revision": 2,
-      "schedule": {
-        "kind": "always"
-      },
-      "albums": [
-        {
-          "id": "542457483",
-          "title": "Schemer-Dreamer",
-          "artist": "Steve Walsh"
-        },
-        {
-          "id": "693584837",
-          "title": "Rio (Remastered)",
-          "artist": "Duran Duran"
-        },
-        {
-          "id": "716217726",
-          "title": "Spring Session M",
-          "artist": "Missing Persons"
-        },
-        {
-          "id": "62442885",
-          "title": "Upstairs at Eric's",
-          "artist": "Yaz"
-        }
-      ]
-    },
     {
       "id": "100-acclaimed-90s-albums",
       "title": "100 Acclaimed 90s Albums",
       "description": "A personal selection of 100 acclaimed albums from the 1990s, presented without ranking. Adapted by Brian Bishop from \"List of 1990s albums considered the best\" by Wikipedia contributors (revision 1381251889): https://en.wikipedia.org/w/index.php?title=List_of_1990s_albums_considered_the_best&oldid=1381251889. Selected 99 entries, added Stone Temple Pilots' Core, and matched US Apple Music editions. The adapted list is offered under CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/. No Wikipedia/Wikimedia endorsement. Music, artwork, and third-party catalog metadata are not covered by this list license.",
       "curator": "Brian Bishop",
       "enabled": true,
-      "displayOrder": 2,
-      "revision": 1,
+      "displayOrder": 0,
+      "revision": 2,
       "schedule": {
         "kind": "always"
       },
@@ -603,6 +525,205 @@
             "url": "https://creativecommons.org/licenses/by-sa/4.0/"
           },
           "changes": "Selected 99 of the 234 source entries, added Core by Stone Temple Pilots, and matched the selections to US Apple Music editions. Source order is retained for the selected entries; Core is appended. This is not a ranking. No publisher commentary or artwork was copied."
+        }
+      ]
+    },
+    {
+      "id": "mike-gs-turntable",
+      "title": "Mike G's Turntable",
+      "description": "A personal journey through rock, soul, jazz, classical, and sounds from around the world.",
+      "curator": "Mike G",
+      "enabled": true,
+      "displayOrder": 1,
+      "revision": 1,
+      "schedule": {
+        "kind": "always"
+      },
+      "albums": [
+        {
+          "id": "1441164426",
+          "title": "Abbey Road (Remastered)",
+          "artist": "The Beatles"
+        },
+        {
+          "id": "1783979306",
+          "title": "Allah Hoo (Full Version)",
+          "artist": "Nusrat Fateh Ali Khan"
+        },
+        {
+          "id": "191445132",
+          "title": "Always On My Mind",
+          "artist": "Willie Nelson"
+        },
+        {
+          "id": "574050396",
+          "title": "Back In Black",
+          "artist": "AC/DC"
+        },
+        {
+          "id": "1065973699",
+          "title": "The Dark Side of the Moon",
+          "artist": "Pink Floyd"
+        },
+        {
+          "id": "1754240695",
+          "title": "EPIC: The Troy Saga (Official Concept Album) - EP",
+          "artist": "Jorge Rivera-Herrans"
+        },
+        {
+          "id": "359298653",
+          "title": "From A Basement On The Hill",
+          "artist": "Elliott Smith"
+        },
+        {
+          "id": "1249417623",
+          "title": "Funeral",
+          "artist": "Arcade Fire"
+        },
+        {
+          "id": "1440844625",
+          "title": "Grease (The Original Soundtrack from the Motion Picture)",
+          "artist": "Jim Jacobs, Warren Casey, John Travolta, Olivia Newton-John"
+        },
+        {
+          "id": "1039798000",
+          "title": "Hunky Dory (2015 Remaster)",
+          "artist": "David Bowie"
+        },
+        {
+          "id": "1895111613",
+          "title": "Missed You Today - Single",
+          "artist": "Michael Goggin"
+        },
+        {
+          "id": "1445667726",
+          "title": "I Put a Spell On You",
+          "artist": "Nina Simone"
+        },
+        {
+          "id": "1440806790",
+          "title": "Innervisions",
+          "artist": "Stevie Wonder"
+        },
+        {
+          "id": "1443155637",
+          "title": "The Joshua Tree",
+          "artist": "U2"
+        },
+        {
+          "id": "268443092",
+          "title": "Kind of Blue",
+          "artist": "Miles Davis"
+        },
+        {
+          "id": "1860622550",
+          "title": "Nothing's About to Happen to Me",
+          "artist": "Mitski"
+        },
+        {
+          "id": "1097861387",
+          "title": "OK Computer",
+          "artist": "Radiohead"
+        },
+        {
+          "id": "5644896",
+          "title": "Our Endless Numbered Days",
+          "artist": "Iron & Wine"
+        },
+        {
+          "id": "721276795",
+          "title": "Paul's Boutique (20th Anniversary Remastered Edition)[Bonus B-Boy Bouillabaisse]",
+          "artist": "Beastie Boys"
+        },
+        {
+          "id": "1440841241",
+          "title": "Pet Sounds",
+          "artist": "The Beach Boys"
+        },
+        {
+          "id": "1833225450",
+          "title": "Schubert: Piano Trios, Vol. 2",
+          "artist": "Gould Piano Trio"
+        },
+        {
+          "id": "1746833068",
+          "title": "Purple Rain",
+          "artist": "Prince & The Revolution"
+        },
+        {
+          "id": "300948043",
+          "title": "Remain In Light",
+          "artist": "Talking Heads"
+        },
+        {
+          "id": "1441164670",
+          "title": "Revolver",
+          "artist": "The Beatles"
+        },
+        {
+          "id": "1440946519",
+          "title": "Robbers & Cowards",
+          "artist": "Cold War Kids"
+        },
+        {
+          "id": "1441164359",
+          "title": "Rubber Soul",
+          "artist": "The Beatles"
+        },
+        {
+          "id": "594061854",
+          "title": "Rumours",
+          "artist": "Fleetwood Mac"
+        },
+        {
+          "id": "277714337",
+          "title": "The Serpent’s Egg (Remastered)",
+          "artist": "Dead Can Dance"
+        },
+        {
+          "id": "1865078197",
+          "title": "Siren - Single",
+          "artist": "Strange Raven"
+        },
+        {
+          "id": "1440788438",
+          "title": "Songs in the Key of Life",
+          "artist": "Stevie Wonder"
+        },
+        {
+          "id": "1760726182",
+          "title": "Southeastern",
+          "artist": "Jason Isbell"
+        },
+        {
+          "id": "1478946356",
+          "title": "Straight Outta Compton",
+          "artist": "N.W.A"
+        },
+        {
+          "id": "747087657",
+          "title": "Tapestry",
+          "artist": "Carole King"
+        },
+        {
+          "id": "269572838",
+          "title": "Thriller",
+          "artist": "Michael Jackson"
+        },
+        {
+          "id": "766628879",
+          "title": "Tavener: The Veil of the Temple",
+          "artist": "Temple Church Choir, Holst Singers, Brass Ensemble of the English Chamber Orchestra, Stephen Layton"
+        },
+        {
+          "id": "1065975633",
+          "title": "The Wall",
+          "artist": "Pink Floyd"
+        },
+        {
+          "id": "1039796877",
+          "title": "The Rise and Fall of Ziggy Stardust and the Spiders from Mars (2012 Remaster)",
+          "artist": "David Bowie"
         }
       ]
     }
