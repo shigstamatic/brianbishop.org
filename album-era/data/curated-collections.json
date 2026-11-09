@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
-  "revision": 10,
+  "revision": 11,
   "collections": [
     {
       "id": "100-acclaimed-90s-albums",
       "title": "100 Acclaimed 90s Albums",
-      "description": "A personal selection of 100 acclaimed albums from the 1990s, presented without ranking. Adapted by Brian Bishop from \"List of 1990s albums considered the best\" by Wikipedia contributors (revision 1381251889): https://en.wikipedia.org/w/index.php?title=List_of_1990s_albums_considered_the_best&oldid=1381251889. Selected 99 entries, added Stone Temple Pilots' Core, and matched US Apple Music editions. The adapted list is offered under CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/. No Wikipedia/Wikimedia endorsement. Music, artwork, and third-party catalog metadata are not covered by this list license.",
+      "description": "Explore 100 acclaimed albums from the 1990s, spanning defining releases and discoveries worth a closer listen. Presented without ranking.",
       "curator": "Brian Bishop",
       "enabled": true,
       "displayOrder": 0,
-      "revision": 2,
+      "revision": 3,
       "schedule": {
         "kind": "always"
       },
